@@ -1,39 +1,39 @@
-# Результаты прогона 2026-10
+# Results of the 2026-10 run
 
-Данные эвала из статьи [sundwell.dev/ru/blog/eval-models](https://sundwell.dev/ru/blog/eval-models). 24 задачи, шесть моделей, по два прогона на модель и задачу, 288 ответов, два судьи на каждый ответ.
+The eval data from the article (in Russian) [sundwell.dev/ru/blog/eval-models](https://sundwell.dev/ru/blog/eval-models). 24 tasks, six models, two runs per model and task, 288 answers, two judges on every answer.
 
 ```bash
-python3 recompute.py           # таблицы
-python3 recompute.py --json    # те же значения в виде, как в данных сайта
+python3 recompute.py           # tables
+python3 recompute.py --json    # the same values in the shape of the site's data
 ```
 
-`recompute.py` читает только три JSON рядом с собой, Python 3.9+ без зависимостей, работает несколько секунд.
+`recompute.py` reads only the three JSON files next to it, needs Python 3.9+ with no dependencies, and runs in a few seconds.
 
-## Файлы
+## Files
 
-- `checklists.json` - по каждой задаче `id`, `category`, `title` и пункты чек-листа (`id`, `core`, `text`) с ловушками (`id`, `text`). Тексты пересказаны, а имена людей и проектов заменены, ровно как на сайте. Исходные формулировки цитировали переписку и код, поэтому их здесь нет
-- `runs.json` - по строке на ответ, `answer` (id вида `<task>__<setting>__r<rep>`), `task`, `setting`, `rep`, `cost_usd` (цена по API, которую вернул Agent SDK), `wall_s` (сколько шла ячейка целиком, в секундах), `latency_s` (время самого вызова модели), `tokens` и `finished`. Порядок строк тот же, в каком шли прогоны, и он важен, от него зависят бутстреп и перестановочный тест
-- `marks.json` - разметка.
-  - `checklist` - по строке на ответ и судью. `judge` это `sol` (GPT-6.1 Sol, effort high, через codex) или `sonnet` (Sonnet 5.5, effort high, через `claude -p`), `items` это отметка "нашёл" по каждому пункту чек-листа, `traps` отметка "повторил ловушку" по каждой ловушке, `findings_total` сколько отдельных находок судья насчитал в ответе
-  - `extra` - второй проход по находкам сверх чек-листа, по строке на ответ, судья Sonnet 5.5. `units` сколько кусков ответа он получил, `useful` и `minor` сколько из них верных находок вне чек-листа ("верно и полезно" и "верно, но мелочь"), `false` сколько неверных, `unverifiable` сколько он не смог проверить. Остальные куски это повторы, пункты чек-листа или не находки
-- `recompute.py` - пересчёт
+- `checklists.json` - for each task `id`, `category`, `title` and the checklist items (`id`, `core`, `text`) with traps (`id`, `text`). The texts are retold, and names of people and projects are replaced, exactly as on the site. The original wording quoted correspondence and code, so it is not here. The checklist texts in `checklists.json` are in Russian, as the tasks were
+- `runs.json` - one line per answer, `answer` (an id of the form `<task>__<setting>__r<rep>`), `task`, `setting`, `rep`, `cost_usd` (the API price returned by the Agent SDK), `wall_s` (how long the whole cell took, in seconds), `latency_s` (the time of the model call itself), `tokens` and `finished`. The order of the lines is the order in which the runs went, and it matters, the bootstrap and the permutation test depend on it
+- `marks.json` - the marks.
+  - `checklist` - one line per answer and judge. `judge` is `sol` (GPT-6.1 Sol, effort high, through codex) or `sonnet` (Sonnet 5.5, effort high, through `claude -p`), `items` is the "found" mark for each checklist item, `traps` the "repeated the trap" mark for each trap, `findings_total` how many separate findings the judge counted in the answer
+  - `extra` - the second pass over findings beyond the checklist, one line per answer, judge Sonnet 5.5. `units` is how many pieces of the answer it got, `useful` and `minor` how many of them are correct findings outside the checklist ("correct and useful" and "correct but minor"), `false` how many are wrong, `unverifiable` how many it could not check. The remaining pieces are repeats, checklist items or not findings
+- `recompute.py` - the recomputation
 
-Ни ответов моделей, ни цитат и обоснований судей здесь нет, только id, отметки и числа.
+There are no model answers here, and no quotes or reasoning of the judges, only ids, marks and numbers.
 
-## Как считается
+## How it is counted
 
-- Пункт засчитан, если его отметили оба судьи. Ловушка засчитана, если оба отметили, что модель её повторила
-- Доля найденного у ответа это засчитанные пункты, делённые на все пункты задачи. У модели это среднее по её 48 ответам
-- Пары моделей сравниваются по задачам. Разница на задаче это среднее двух прогонов одной модели минус среднее двух прогонов другой. Интервал это перцентильный бутстреп по задачам, 4000 повторов, seed 7. p это перестановочный тест со сменой знака по задачам, 200000 раундов, seed 7, с поправкой Холма на семь пар
-- "Два прогона вместе" это объединение пунктов, найденных хотя бы одним из двух прогонов модели
-- Находки сверх чек-листа на ответ это `useful` + `minor`
-- Цена и время на ответ это среднее по ответам модели, а отношение цены и времени в статье это отношение этих средних
+- An item counts if both judges marked it. A trap counts if both marked that the model repeated it
+- The share found for an answer is the counted items divided by all items of the task. For a model it is the mean over its 48 answers
+- Pairs of models are compared per task. The difference on a task is the mean of two runs of one model minus the mean of two runs of the other. The interval is a percentile bootstrap over tasks, 4000 resamples, seed 7. p is a sign-flip permutation test over tasks, 200000 rounds, seed 7, with Holm correction over seven pairs
+- "Two runs together" is the union of items found by at least one of a model's two runs
+- Findings beyond the checklist per answer are `useful` + `minor`
+- Cost and time per answer are the mean over a model's answers, and the ratio of cost and time in the article is the ratio of these means
 
-## Проверка, что цифры те же
+## Checking that the numbers are the same
 
-Вывод `recompute.py` совпадает с данными сайта (`settings`, `categories`, `pairs`, `twoRuns`, `overview`, 0 расхождений) и дословно содержит три сохранённые распечатки исходных скриптов эвала (итоговые таблицы, пары с p и Холмом, "два прогона против одного").
+The output of `recompute.py` matches the site's data (`settings`, `categories`, `pairs`, `twoRuns`, `overview`, 0 mismatches) and contains verbatim three saved printouts of the eval's original scripts (the final tables, the pairs with p and Holm, "two runs versus one").
 
-## Отпечатки
+## Checksums
 
 ```
 fad51dd6ccf2df7fc7ec90a9670eae9146f0214e1179f1784c8943cb8c71517f  checklists.json
@@ -41,13 +41,13 @@ fad51dd6ccf2df7fc7ec90a9670eae9146f0214e1179f1784c8943cb8c71517f  checklists.jso
 8b3dd7657e4f053a3c3b747813f31cf5a43766c03cfd2ddc1bd0d993e4c9612e  runs.json
 ```
 
-Проверить `sha256sum *.json`.
+Check with `sha256sum *.json`.
 
-Когда в последний раз менялись исходные файлы, из которых собраны эти JSON, по времени изменения самих файлов.
+When the source files these JSON files were built from last changed, going by the modification times of the files themselves.
 
-- Чек-листы, последняя правка 17 октября 2026 в 22:26
-- Разметка судей по чек-листам, с 17 октября 22:42 по 18 октября 12:32
-- Прогоны, последний ответ записан 18 октября в 08:35
-- Второй проход по находкам сверх чек-листа, 20 октября с 19:20 по 22:23
+- Checklists, last edit on October 17, 2026 at 22:26
+- Judges' marks against the checklists, from October 17 22:42 to October 18 12:32
+- Runs, the last answer written on October 18 at 08:35
+- The second pass over findings beyond the checklist, October 20 from 19:20 to 22:23
 
-Время местное, UTC+2.
+Local time, UTC+2.

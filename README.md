@@ -1,7 +1,7 @@
 # claude-evals
 
-Мои эвалы моделей Claude на моих же задачах. Каждый эвал лежит в своей папке со своим README, кодом и данными.
+My evals of Claude models on my own tasks. Each eval lives in its own folder with its own README, code and data.
 
-- [non-code-claude-evals](non-code-claude-evals/) - Opus 5.5, Fable 5.1 и Sonnet 5.5 на 24 задачах не про код (ревью кода и планов, фактчек, разбор входящих сообщений, работа с длинной сессией), по два прогона на модель и задачу. Статья с результатами [sundwell.dev/ru/blog/eval-models](https://sundwell.dev/ru/blog/eval-models)
+- [non-code-claude-evals](non-code-claude-evals/) - Opus 5.5, Fable 5.1 and Sonnet 5.5 on 24 tasks that are not about writing code (code and plan review, fact-checking, intake of incoming messages, work with a long session), two runs per model and task. Article with the results (in Russian) [sundwell.dev/ru/blog/eval-models](https://sundwell.dev/ru/blog/eval-models)
 
-Лицензия MIT, см. [LICENSE](LICENSE).
+MIT license, see [LICENSE](LICENSE).

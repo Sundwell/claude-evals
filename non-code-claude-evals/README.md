@@ -1,29 +1,29 @@
 # non-code-claude-evals
 
-Эвал моделей Claude на задачах не про написание кода. В октябре 2026 я прогнал шесть моделей (Sonnet 5.5 medium и xhigh, Opus 5.5 high и xhigh, Fable 5.1 low и high) на 24 задачах из своей работы, по два прогона на модель и задачу, 288 ответов. Задачи шести типов, ревью кода, фактчек, разбор входящих сообщений, ревью плана, вспомнить деталь из сессии и следующий шаг в сессии. Результаты и выводы в статье [sundwell.dev/ru/blog/eval-models](https://sundwell.dev/ru/blog/eval-models).
+An eval of Claude models on tasks that are not about writing code. In October 2026 I ran six models (Sonnet 5.5 medium and xhigh, Opus 5.5 high and xhigh, Fable 5.1 low and high) on 24 tasks from my own work, two runs per model and task, 288 answers. The tasks are of six types (code review, fact-checking, intake of incoming messages, plan review, recalling a detail from a session, and the next turn in a session). Results and conclusions are in the article (in Russian) [sundwell.dev/ru/blog/eval-models](https://sundwell.dev/ru/blog/eval-models).
 
-Здесь код, которым это гонялось, формат задачи с гайдом, как собрать свои, и данные, из которых пересчитываются все цифры статьи.
+Here is the code that ran it, the task format with a guide on how to build your own tasks, and the data from which every number in the article is recomputed.
 
-## Что здесь есть
+## What is here
 
-- [harness/](harness/) - `run.py` гоняет каждую пару (задача, модель) нужное число раз, `judge.py` размечает ответы по чек-листам, `score.py` считает таблицы. Настройки в `config.example.toml`
-- [guide/task-format.md](guide/task-format.md) - точный формат папки задачи с разобранным примером
-- [guide/collect-tasks.md](guide/collect-tasks.md) - как собрать задачи из своей работы, написать чек-лист и не наступить на то, на что наступил я
-- [example-task/](example-task/) - одна выдуманная задача на ревью кода (маленький проект библиотеки, изменение с заложенными багами и одна ловушка), чтобы прогнать всё целиком за пару минут
-- [results-2026-10/](results-2026-10/) - чек-листы 24 задач, разметка судей по каждому пункту, цена и время каждого ответа, и `recompute.py`, который печатает цифры статьи
-- [AGENTS.md](AGENTS.md) - то же для агента, который помогает вам с репозиторием
+- [harness/](harness/) - `run.py` runs each (task, model) pair the required number of times, `judge.py` marks the answers against the checklists, `score.py` computes the tables. Settings are in `config.example.toml`
+- [guide/task-format.md](guide/task-format.md) - the exact format of a task folder with a worked example
+- [guide/collect-tasks.md](guide/collect-tasks.md) - how to build tasks from your own work, write a checklist and not step on what I stepped on
+- [example-task/](example-task/) - one made-up code review task (a small library project, a change with planted bugs and one trap), to run the whole thing end to end in a couple of minutes
+- [results-2026-10/](results-2026-10/) - the checklists of the 24 tasks, the judges' marks for every item, the cost and time of every answer, and `recompute.py`, which prints the article's numbers
+- [AGENTS.md](AGENTS.md) - the same for an agent that helps you with the repo
 
-## Чего здесь нет и почему
+## What is not here and why
 
-Самих задач нет. Это мои настоящие рабочие материалы, переписка с клиентами, код клиентских проектов, транскрипты моих сессий, и выложить их нельзя. Поэтому нет и промптов задач, и ответов моделей (ответы цитируют материалы), и сырых логов, и обоснований судей (судьи тоже цитируют).
+The tasks themselves are not here. They are my real work material, correspondence with clients, code of client projects, transcripts of my sessions, and I can't publish them. So there are no task prompts, no model answers (the answers quote the material), no raw logs and no judges' reasoning (the judges quote it too).
 
-Что осталось, это пересказ пунктов чек-листов (имена людей и проектов в них заменены, как и на сайте), и по каждому ответу только числа и отметки "нашёл / не нашёл". Этого хватает, чтобы пересчитать каждую цифру статьи, но не хватает, чтобы перепроверить самих судей. Для своих задач у вас будет всё, так что повторить эвал целиком можно на них.
+What is left is a retelling of the checklist items (names of people and projects in them are replaced, as on the site), and for each answer only numbers and "found / not found" marks. That is enough to recompute every number in the article, but not enough to re-check the judges themselves. For your own tasks you will have everything, so you can repeat the whole eval on them.
 
-Второго прохода по находкам сверх чек-листа (судья проверяет по исходникам каждую находку, которой нет в чек-листе, и ставит "верно и полезно", "верно, но мелочь" или "неверно") в `harness/` нет. Его итоговые счётчики по каждому ответу есть в `results-2026-10/marks.json`, а сам проход ещё не приведён к виду, который запускается без правок.
+The second pass over findings beyond the checklist (the judge checks every finding that is not in the checklist against the sources and rates it "correct and useful", "correct but minor" or "wrong") is not in `harness/`. Its final counts for each answer are in `results-2026-10/marks.json`, but the pass itself is not yet in a shape that runs without edits.
 
-## Быстрый старт на примере
+## Quick start on the example
 
-Нужно Python 3.11+, Node.js 22.22+ и залогиненный Claude Code (подписка или `ANTHROPIC_API_KEY`). На Linux ещё bubblewrap (`apt install bubblewrap`), агент в задаче получает Bash и по умолчанию работает в песочнице. Файл входа Claude Code виден агенту в песочнице и открыт на запись, иначе Claude Code не сохранит обновлённый вход. Поэтому чужие задачи лучше гонять на отдельном аккаунте.
+You need Python 3.11+, Node.js 22.22+ and a logged-in Claude Code (a subscription or `ANTHROPIC_API_KEY`). On Linux also bubblewrap (`apt install bubblewrap`), since the agent in a task gets Bash and runs in a sandbox by default. The Claude Code login file is visible to the agent in the sandbox and open for writing, otherwise Claude Code can't save a refreshed login. So it is better to run other people's tasks on a separate account.
 
 ```bash
 cd non-code-claude-evals
@@ -35,23 +35,23 @@ python3 harness/judge.py
 python3 harness/score.py
 ```
 
-`run.py --dry-run` только печатает, что будет запущено. Одна ячейка Sonnet 5.5 medium на примере у меня шла 20 секунд и по ценам API стоила $0.06, судья нашёл в её ответе все 5 пунктов. Если пересчитать по отношению цен моделей в статье, все 12 ячеек примера (6 моделей по 2 раза) выйдут около $3-4. Вызов судьи стоит столько, сколько весит контекст вашего Claude Code (судья запускается как обычный `claude -p` от вашего имени, с вашими глобальными CLAUDE.md, скиллами и MCP), у меня с тяжёлым глобальным конфигом это было $0.89 за ответ. На подписке всё это уходит в её лимиты, `run.py` сам ставит новые ячейки на паузу, когда 5-часовое окно почти выбрано, и останавливается перед концом недельного.
+`run.py --dry-run` only prints what will be run. One Sonnet 5.5 medium cell on the example took me 20 seconds and cost $0.06 at API prices, and the judge found all 5 items in its answer. Scaled by the ratio of model prices in the article, all 12 cells of the example (6 models, 2 runs each) come to about $3-4. A judge call costs as much as the context of your Claude Code weighs (the judge runs as a plain `claude -p` under your name, with your global CLAUDE.md, skills and MCP), and with my heavy global config it was $0.89 per answer. On a subscription all of this goes into its limits; `run.py` itself pauses new cells when the 5-hour window is almost used up, and stops before the end of the weekly one.
 
-Папки `tasks/` и `runs/` в `.gitignore`. Остановленный прогон продолжается тем же запуском, готовые ячейки и разметки пропускаются.
+The `tasks/` and `runs/` folders are in `.gitignore`. A stopped run continues with the same command, finished cells and marks are skipped.
 
-## На своих задачах
+## On your own tasks
 
-1. Соберите 10-25 задач по [guide/collect-tasks.md](guide/collect-tasks.md) и положите их в `tasks/<id>/` в формате [guide/task-format.md](guide/task-format.md)
-2. Если хотите поменять модели, effort, число прогонов или включить второго судью, скопируйте `harness/config.example.toml` в `harness/config.toml` и поправьте его. Скрипты берут `config.toml`, если он есть
-3. `python3 harness/judge.py --check` проверяет каждый чек-лист на двух искусственных ответах, пустом и состоящем из самого чек-листа. Судья должен дать 0% и 100%, иначе пункт написан так, что его не узнать
-4. Дальше `run.py`, `judge.py` (можно параллельно с `run.py`, флаг `--follow`) и `score.py`
+1. Build 10-25 tasks following [guide/collect-tasks.md](guide/collect-tasks.md) and put them in `tasks/<id>/` in the format of [guide/task-format.md](guide/task-format.md)
+2. If you want to change the models, effort, number of runs, or turn on a second judge, copy `harness/config.example.toml` to `harness/config.toml` and edit it. The scripts use `config.toml` when it exists
+3. `python3 harness/judge.py --check` checks every checklist on two artificial answers, an empty one and one made of the checklist itself. The judge must give 0% and 100%, otherwise an item is written in a way that can't be recognized
+4. Then `run.py`, `judge.py` (it can run alongside `run.py` with the `--follow` flag) and `score.py`
 
-Второй судья, GPT-6.1 Sol через codex CLI, включается в конфиге (`[judges.sol] enabled = true`). С двумя судьями пункт засчитан, только если его отметили оба, как в статье. С одним Sonnet цифры получатся немного выше, у меня "хотя бы один судья" давал на 6-10 п.п. больше, чем "оба".
+The second judge, GPT-6.1 Sol through the codex CLI, is turned on in the config (`[judges.sol] enabled = true`). With two judges an item counts only if both marked it, as in the article. With Sonnet alone the numbers come out a bit higher; for me "at least one judge" gave 6-10 p.p. more than "both".
 
-## Пересчитать цифры статьи
+## Recompute the article's numbers
 
 ```bash
 python3 results-2026-10/recompute.py
 ```
 
-Печатает долю найденного по каждой модели с 95% интервалом, сравнение пар с p и поправкой Холма, разбивку по типам задач, "два прогона против одного", ловушки, находки сверх чек-листа, цену и время на ответ. Ничего, кроме трёх JSON рядом с ним, не читает, сеть и модели не нужны. Что в каком файле, в [results-2026-10/README.md](results-2026-10/README.md).
+It prints the share found for each model with a 95% interval, pairwise comparisons with p and Holm correction, the breakdown by task type, "two runs versus one", traps, findings beyond the checklist, and cost and time per answer. It reads nothing but the three JSON files next to it, and needs no network and no models. What is in which file is in [results-2026-10/README.md](results-2026-10/README.md).

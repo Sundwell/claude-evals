@@ -144,10 +144,10 @@ def main():
             with open(os.path.join(tasks_dir, t, "key.json"), encoding="utf-8") as fh:
                 k = json.load(fh)
             with open(os.path.join(paths["answers"], f"{t}__empty.md"), "w", encoding="utf-8") as fh:
-                fh.write("Не нашёл ничего.\n\nИтого: 0 находок\n")
+                fh.write("Found nothing.\n\nTotal: 0 findings\n")
             with open(os.path.join(paths["answers"], f"{t}__fullkey.md"), "w", encoding="utf-8") as fh:
                 fh.write("\n".join(f"### {n + 1}. {i['text']}" for n, i in enumerate(k["items"]))
-                         + f"\n\nИтого: {len(k['items'])} находок\n")
+                         + f"\n\nTotal: {len(k['items'])} findings\n")
     os.makedirs(paths["marks"], exist_ok=True)
     os.makedirs(paths["answers"], exist_ok=True)
     failed, total = set(), {}

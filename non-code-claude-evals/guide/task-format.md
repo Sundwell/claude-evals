@@ -1,58 +1,58 @@
-# Формат задачи
+# Task format
 
-Одна задача это одна папка `tasks/<id>/`. `run.py` берёт каждую папку, в которой есть `prompt.md`, и пропускает папки, чьё имя начинается с `_` (туда удобно класть черновики и служебное). Полный рабочий пример лежит в [../example-task/](../example-task/), ниже он же разобран по файлам.
+One task is one folder `tasks/<id>/`. `run.py` takes every folder that has a `prompt.md`, and skips folders whose name starts with `_` (a handy place for drafts and service files). A complete working example is in [../example-task/](../example-task/), and below it is taken apart file by file.
 
 ```
 tasks/
   cr-shelf-renewals/
-    prompt.md      # задание, одинаковое для всех моделей
-    key.json       # чек-лист и ловушки, модель его никогда не видит
-    meta.json      # откуда задача и в чём вы не уверены, только для вас
-    src/           # материал, который модель может читать
+    prompt.md      # the task, the same for every model
+    key.json       # checklist and traps, the model never sees it
+    meta.json      # where the task came from and what you're unsure of, for you only
+    src/           # material the model may read
       repo/
       change.diff
 ```
 
 ## id
 
-Короткий kebab-case латиницей с префиксом типа. У меня было шесть типов.
+A short kebab-case Latin id with a type prefix. I had six types.
 
-- `cr-` ревью кода. Прочитать изменение и найти баги, не запуская ничего снаружи
-- `plan-` ревью плана. Найти ошибки в плане, сверяя его с кодом, до того как по нему начнут работать
-- `fc-` фактчек. Проверить утверждения отчёта или ресерча по исходникам
-- `intake-` разбор входящих сообщений. Пришёл материал (тред, тикет, голосовые), решить, что из него важно и что с этим делать
-- `recall-` вспомнить деталь из сессии. Найти, что потерялось из длинной сессии в заметке или документации, написанной по её итогам
-- `turn-` следующий шаг в сессии. Продолжить сессию с места, где вы когда-то не приняли ход агента
+- `cr-` code review. Read a change and find bugs without running anything outside
+- `plan-` plan review. Find errors in a plan by checking it against the code, before anyone starts working from it
+- `fc-` fact-checking. Check the claims of a report or research against the sources
+- `intake-` intake of incoming messages. Material came in (a thread, a ticket, voice messages), decide what in it matters and what to do about it
+- `recall-` recalling a detail from a session. Find what got lost from a long session in a note or documentation written from its results
+- `turn-` the next turn in a session. Continue a session from the point where you once did not accept the agent's turn
 
-Префикс нужен только вам, `score.py` берёт тип из `category` в `key.json`.
+The prefix is only for you, `score.py` takes the type from `category` in `key.json`.
 
 ## prompt.md
 
-Задание, которое получает модель. Одинаковое для всех моделей и всех прогонов, `run.py` подставляет его как есть.
+The task the model gets. The same for every model and every run, `run.py` passes it as is.
 
-- Коротко, что за материал и где он лежит (пути от рабочей папки, `./...`), что найти или решить и зачем
-- Никаких списков шагов, "подумай внимательно" и подсказок, которые наводят на пункты чек-листа
-- Где можно писать черновики. Агент работает в копии `src/`, у меня в промпте всегда было "копии и проверочные скрипты только в `./work/`"
-- В конце формат ответа. Ответ финальным сообщением, не файлом, каждая находка с заголовком, указанием где (файл:строка или цитата) и весом "важно" или "мелочь", последняя строка `Итого: N находок`
+- Briefly, what the material is and where it lies (paths from the working folder, `./...`), what to find or decide and why
+- No step lists, no "think carefully" and no hints that point at checklist items
+- Where drafts may go. The agent works in a copy of `src/`, and my prompts always said "copies and check scripts only in `./work/`"
+- At the end, the answer format. The answer as the final message, not a file, each finding with a heading, a location (file:line or a quote) and a weight "major" or "minor", the last line `Total: N findings`
 
-Язык промпта по материалу. Мои задачи были на русском, судья спокойно сверяет русский ответ с русским чек-листом.
+The language of the prompt follows the material. My tasks were in Russian, and the judge had no trouble checking a Russian answer against a Russian checklist.
 
-Пример целиком в [../example-task/prompt.md](../example-task/prompt.md). Обратите внимание на абзац "Как разбирать". Он задаёт, что считать багом, а что мелочью, и отсекает дефекты старого кода. Без такого абзаца модели тонут в стиле и тестах, и ответ сложнее сверять.
+The full example is in [../example-task/prompt.md](../example-task/prompt.md). Note the "How to review" paragraph. It sets what counts as a bug and what as a minor issue, and cuts off defects of old code. Without such a paragraph models drown in style and tests, and the answer is harder to check.
 
 ## src/
 
-Копия ровно того, что модель может прочитать, на момент, когда задача была поставлена. Перед каждым прогоном `run.py` копирует `src/` во временную папку, так что модель его не испортит.
+A copy of exactly what the model may read, at the moment the task was set. Before each run `run.py` copies `src/` into a temporary folder, so the model can't spoil it.
 
-- Только копия, никаких симлинков
-- Ничего, что появилось после этого момента. Ни следующих коммитов, ни ваших поздних сообщений, ни файлов с оценками, ни истории git дальше этого момента. Дерево кода на нужном коммите удобно снять командой `git -C <repo> archive <rev> | tar -x -C tasks/<id>/src/repo`, папку `.git` не копируйте
-- Меньше 30 МБ. Без `node_modules`, картинок и бинарников, если задача не про них
-- Перед прогоном поищите в `src/` характерные слова каждого пункта чек-листа, чтобы ответ не лежал в материале готовым
+- Only a copy, no symlinks
+- Nothing that appeared after that moment. No later commits, no later messages of yours, no score files, no git history past that moment. The code tree at the right commit is easy to take with `git -C <repo> archive <rev> | tar -x -C tasks/<id>/src/repo`, don't copy the `.git` folder
+- Under 30 MB. No `node_modules`, images or binaries unless the task is about them
+- Before the run, search `src/` for the distinctive words of each checklist item, so the answer isn't lying ready in the material
 
-В примере `src/repo/` это проект до изменения, а `src/change.diff` само изменение. Так модель видит и старый код, и дифф, и может применить его у себя в `./work/`.
+In the example `src/repo/` is the project before the change, and `src/change.diff` is the change itself. So the model sees both the old code and the diff, and can apply it in its own `./work/`.
 
 ## key.json
 
-Чек-лист. Модель его не видит, видят только судьи.
+The checklist. The model does not see it, only the judges do.
 
 ```json
 {
@@ -61,37 +61,37 @@ tasks/
  "key_source": "seeded",
  "items": [
   {"id": "K01", "weight": "core",
-   "text": "Проверка лимита продлений 'loan.renewals > MAX_RENEWALS' пропускает третье продление. У выдачи, уже продлённой дважды (renewals == 2), renew() срабатывает ещё раз, а README обещает не больше двух. Нужно '>='",
+   "text": "The renewal limit check 'loan.renewals > MAX_RENEWALS' lets a third renewal through. On a loan already renewed twice (renewals == 2), renew() succeeds once more, while the README promises at most two. It should be '>='",
    "evidence": "seeded: shelf/loans.py renew(), README 'at most twice'"},
   {"id": "K05", "weight": "minor",
-   "text": "Команда renew печатает 'Renewed until None', потому что renew() ничего не возвращает, а cli.py печатает её результат вместо loan.due",
+   "text": "The renew command prints 'Renewed until None', because renew() returns nothing and cli.py prints its result instead of loan.due",
    "evidence": "seeded: shelf/cli.py main(), shelf/loans.py renew() has no return"}
  ],
  "errors": [
   {"id": "E01",
-   "text": "Утверждение, что при возврате книги раньше срока days_late() становится отрицательным и fine() выдаёт отрицательный штраф (на самом деле days_late() обрезает значение через max(0, ...), и этот код изменение не трогает)",
+   "text": "The claim that when a book is returned before the due date days_late() becomes negative and fine() gives a negative fine (in fact days_late() clamps the value with max(0, ...), and the change does not touch this code)",
    "evidence": "shelf/loans.py days_late() returns max(0, ...), unchanged by the diff"}
  ]
 }
 ```
 
-Поля.
+Fields.
 
-- `task` - тот же id, что у папки
-- `category` - тип задачи, по нему `score.py` строит таблицу по типам. У меня `code-review`, `plan`, `fact-check`, `intake`, `recall`, `turn`, но можно любые свои
-- `key_source` - откуда взят чек-лист, для вас и для читателей результатов. У меня были `later-outcome` (что потом сломалось или что починили), `his-correction` (что я поправил руками в ответе агента), `scored-replay` (что уже было проверено на прошлом прогоне), `verified-union` (объединение находок моделей, перепроверенное по исходникам, самый слабый вариант) и `seeded` (ошибка заложена специально)
-- `items` - пункты, которые хороший ответ должен найти. От 5 до 15 на задачу
-  - `id` - `K01`, `K02` и дальше по порядку. Судья должен вернуть все id в этом же порядке, иначе `judge.py` считает разметку сломанной и повторяет вызов
-  - `text` - одно проверяемое утверждение. Судья видит только ответ и этот текст, поэтому в тексте должно быть всё, чтобы узнать находку, где, при каком входе, что получается не так
-  - `weight` - `core`, если пропуск стоит чего-то настоящего, `minor` всё остальное. `score.py` считает долю найденного по всем пунктам и отдельно по `core`
-  - `evidence` - откуда вы знаете, что пункт верен (файл:строка, коммит, ваше сообщение с датой). Судье не показывается
-- `errors` - ловушки, необязательно. Неверное утверждение, которое в материале выглядит правдой. Если модель его повторила, это ошибка. Судья видит только `id` и `text`
+- `task` - the same id as the folder
+- `category` - the task type, `score.py` builds the per-type table from it. I had `code-review`, `plan`, `fact-check`, `intake`, `recall`, `turn`, but any of your own will do
+- `key_source` - where the checklist came from, for you and for readers of the results. I had `later-outcome` (what broke later or what was fixed), `his-correction` (what I corrected by hand in an agent's answer), `scored-replay` (what was already checked in a past run), `verified-union` (a union of model findings, re-checked against the sources, the weakest option) and `seeded` (the error was planted on purpose)
+- `items` - the items a good answer should find. 5 to 15 per task
+  - `id` - `K01`, `K02` and so on in order. The judge must return all ids in the same order, otherwise `judge.py` treats the marks as broken and repeats the call
+  - `text` - one checkable statement. The judge sees only the answer and this text, so the text must hold everything needed to recognize the finding, where, on what input, what goes wrong
+  - `weight` - `core` if missing it costs something real, `minor` for everything else. `score.py` computes the share found over all items and separately over `core`
+  - `evidence` - how you know the item is correct (file:line, a commit, your message with a date). Not shown to the judge
+- `errors` - traps, optional. A wrong statement that looks true in the material. If the model repeated it, that is an error. The judge sees only `id` and `text`
 
-Судья получает из `key.json` только `id` и `text` пунктов и ловушек. Всё остальное для вас.
+The judge gets only `id` and `text` of items and traps from `key.json`. Everything else is for you.
 
 ## meta.json
 
-Для вас, ни модель, ни судья его не читают. Пригодится через неделю, когда вы забудете, откуда взялась задача.
+For you, neither the model nor the judge reads it. It comes in handy a week later, when you have forgotten where the task came from.
 
 ```json
 {
@@ -105,29 +105,29 @@ tasks/
 }
 ```
 
-- `origin` - откуда материал, пути и коммиты
-- `moment` - момент, на котором заморожен `src/`
-- `why` - одна строка, почему это честная проверка
-- `key_doubts` - пункты, в которых вы не уверены, и почему
-- `est_minutes_opus_high` - сколько примерно задача займёт у сильной модели. У меня задачи были на 3-12 минут, длиннее лучше урезать материал
+- `origin` - where the material came from, paths and commits
+- `moment` - the moment at which `src/` is frozen
+- `why` - one line on why this is a fair test
+- `key_doubts` - items you're unsure of, and why
+- `est_minutes_opus_high` - roughly how long the task takes a strong model. My tasks took 3-12 minutes, and longer ones are better trimmed
 
-## Проверка перед первым прогоном
+## Check before the first run
 
 ```bash
 python3 harness/judge.py --check --tasks <id>
 ```
 
-Для каждой задачи пишет два искусственных ответа, пустой и состоящий из самого чек-листа, в `runs/check-answers/` и размечает их в `runs/check-marks/`. В пустом не должно найтись ни одного пункта, в полном все. Пункт, который судья не узнал в его собственном тексте, сформулирован так, что его не узнать и в настоящем ответе.
+For each task it writes two artificial answers, an empty one and one made of the checklist itself, to `runs/check-answers/` and marks them in `runs/check-marks/`. The empty one must have no items found, the full one all of them. An item the judge did not recognize in its own text is worded so that it can't be recognized in a real answer either.
 
-## Что пишет run.py
+## What run.py writes
 
 ```
 runs/
-  secret-map.jsonl                 # по строке на ответ, задача, модель, номер прогона, цена, время, токены
-  answers/<task>__<hash>.md        # ответы, имя не выдаёт модель
+  secret-map.jsonl                 # one line per answer: task, model, run number, cost, time, tokens
+  answers/<task>__<hash>.md        # answers, the name does not give away the model
   marks/<task>__<hash>__sonnet.json
-  <task>/<setting>__r<rep>/        # конфиг promptfoo, result.json, лог и cell.json этой ячейки
+  <task>/<setting>__r<rep>/        # promptfoo config, result.json, log and cell.json of this cell
   run.log
 ```
 
-Ответы и разметка цитируют ваш материал, поэтому `runs/` в `.gitignore`, как и `tasks/`.
+Answers and marks quote your material, so `runs/` is in `.gitignore`, as is `tasks/`.

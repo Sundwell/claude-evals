@@ -1,24 +1,24 @@
-Задача: ревью готового изменения перед коммитом. Ты только читаешь и проверяешь, код не пишешь и файлы в ./repo не правишь.
+Task: review a finished change before it is committed. You only read and check, you don't write code and don't edit files in ./repo.
 
-Материал в рабочей папке.
-- ./repo/ - маленький проект shelf (Python 3.11, без зависимостей) на коммите до изменения. Это учёт выдачи книг в районной библиотеке, сроки возврата и штрафы за просрочку, с командной строкой `python3 -m shelf.cli`.
-- ./change.diff - изменение. Оно добавляет продление выдачи и потолок штрафа. Что задумано, написано в разделе "Renewals" README внутри этого же изменения. Применяется к ./repo командой `git apply`.
+Material in the working folder.
+- ./repo/ - a small project called shelf (Python 3.11, no dependencies) at the commit before the change. It tracks book loans at a district library, due dates and late fines, with a command line `python3 -m shelf.cli`.
+- ./change.diff - the change. It adds loan renewals and a cap on fines. What is intended is written in the "Renewals" section of the README inside this same change. It applies to ./repo with `git apply`.
 
-Найди дефекты этого изменения.
+Find the defects of this change.
 
-Как разбирать.
-- Баг - только воспроизводимое поведение, которое ломает то, для чего это изменение: назови конкретный вход или состояние и что получается не так.
-- Всё остальное (стиль, имена, структура, тексты, тесты, случаи без достижимого триггера) - мелочи, отдельным разделом.
-- Дефекты старого кода, которого изменение не касается, не включай.
+How to review.
+- A bug is only reproducible behavior that breaks what this change is for. Name the concrete input or state and what goes wrong.
+- Everything else (style, names, structure, texts, tests, cases with no reachable trigger) is minor issues, in a separate section.
+- Don't include defects of old code that the change does not touch.
 
-Сети нет. Можно скопировать ./repo в ./work/, применить там изменение и запускать функции и тесты (`python3 -m unittest`). Копии, черновики и проверочные скрипты - только в ./work/.
+There is no network. You may copy ./repo to ./work/, apply the change there and run functions and tests (`python3 -m unittest`). Copies, drafts and check scripts go only in ./work/.
 
-Формат ответа - финальным сообщением, не файлом. Два раздела, `## Баги` и `## Мелочи`. Каждая находка так:
+Answer format - as the final message, not a file. Two sections, `## Bugs` and `## Minor issues`. Each finding like this.
 
-### N. <одна строка, что не так>
-- Где: файл:строка или цитата из изменения.
-- Триггер: вход или состояние (для бага обязательно).
-- Что не так: что получается и что должно быть.
-- Вес: "важно" или "мелочь".
+### N. <one line on what is wrong>
+- Where: file:line or a quote from the change.
+- Trigger: input or state (required for a bug).
+- What is wrong: what happens and what should happen.
+- Weight: "major" or "minor".
 
-Последняя строка - `Итого: N находок, из них багов B`.
+The last line is `Total: N findings, B of them bugs`.

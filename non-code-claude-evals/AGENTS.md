@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Guide for a coding agent helping someone run this eval on their own tasks. The human-facing docs are in Russian (README.md, guide/); this file says the same for you.
+Guide for a coding agent helping someone run this eval on their own tasks. The human-facing docs are README.md and guide/; this file says the same for you.
 
 ## What this is
 
@@ -14,7 +14,7 @@ An eval of Claude models on judgment work that is not code writing: code and pla
 - `harness/common.py` - config loading shared by the three scripts.
 - `harness/config.example.toml` - defaults. A `harness/config.toml`, when present, is used instead (gitignored).
 - `harness/package.json` - promptfoo and `@anthropic-ai/claude-agent-sdk`, pinned to the versions of the 2026-10 run.
-- `guide/task-format.md`, `guide/collect-tasks.md` - task format and how to build tasks (Russian).
+- `guide/task-format.md`, `guide/collect-tasks.md` - task format and how to build tasks.
 - `example-task/` - one invented code-review task, safe to publish.
 - `results-2026-10/` - the published results of the 2026-10 run and `recompute.py`.
 - `tasks/`, `runs/` - the user's own tasks and outputs. Both are gitignored and must stay that way.
