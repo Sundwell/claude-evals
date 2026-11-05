@@ -1,0 +1,27 @@
+{
+ "task": "example-task",
+ "category": "code-review",
+ "key_source": "seeded",
+ "items": [
+  {"id": "K01", "weight": "core",
+   "text": "Проверка лимита продлений 'loan.renewals > MAX_RENEWALS' пропускает третье продление. У выдачи, уже продлённой дважды (renewals == 2), renew() срабатывает ещё раз, а README обещает не больше двух. Нужно '>='",
+   "evidence": "seeded: shelf/loans.py renew(), README 'at most twice'"},
+  {"id": "K02", "weight": "core",
+   "text": "Потолок штрафа 5.00 EUR применяется только к возвращённым книгам ('if loan.returned'). Для книги, которая всё ещё на руках и просрочена на 40 дней, fine() и команда fine показывают 10.00 EUR вместо 5.00",
+   "evidence": "seeded: shelf/loans.py fine(), README 'never goes above 5.00 EUR'"},
+  {"id": "K03", "weight": "core",
+   "text": "Продление считает новый срок от сегодняшнего дня ('today + RENEW_DAYS'), а не от текущего срока. Продление за 5 дней до срока даёт читателю 9 дней вместо 14, хотя README обещает, что раннее продление дней не отнимает. Тест этого не ловит, потому что продлевает ровно в день срока",
+   "evidence": "seeded: shelf/loans.py renew(), README 'adds 14 days to the current due date', tests/test_loans.py test_renew_adds_two_weeks"},
+  {"id": "K04", "weight": "core",
+   "text": "save() в cli.py не записывает renewals в файл выдачи, поэтому каждое продление через команду renew начинается с нуля и лимит продлений через командную строку не срабатывает никогда",
+   "evidence": "seeded: shelf/cli.py save() builds raw without 'renewals', load() reads it with default 0"},
+  {"id": "K05", "weight": "minor",
+   "text": "Команда renew печатает 'Renewed until None', потому что renew() ничего не возвращает, а cli.py печатает её результат вместо loan.due",
+   "evidence": "seeded: shelf/cli.py main(), shelf/loans.py renew() has no return"}
+ ],
+ "errors": [
+  {"id": "E01",
+   "text": "Утверждение, что при возврате книги раньше срока days_late() становится отрицательным и fine() выдаёт отрицательный штраф (на самом деле days_late() обрезает значение через max(0, ...), и этот код изменение не трогает)",
+   "evidence": "shelf/loans.py days_late() returns max(0, ...), unchanged by the diff"}
+ ]
+}

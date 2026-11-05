@@ -1,0 +1,8 @@
+node_modules/
+__pycache__/
+*.pyc
+# Task materials and model answers never go into the repo, see non-code-claude-evals/AGENTS.md
+non-code-claude-evals/tasks/
+non-code-claude-evals/runs/
+non-code-claude-evals/harness/config.toml
+.build-report.md

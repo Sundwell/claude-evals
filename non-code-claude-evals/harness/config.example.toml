@@ -1,0 +1,61 @@
+# Copy to config.toml to change anything; the scripts read config.toml when it exists, this file otherwise.
+# Relative paths are relative to the folder of the config file.
+
+# Task folders (<id>/prompt.md, key.json, meta.json, src/). Never commit this folder.
+tasks_dir = "../tasks"
+# Answers, marks and logs. Never commit this folder either: answers quote the task materials.
+runs_dir = "../runs"
+
+# Runs per (task, setting). Two is the least that lets score.py compare "two runs together" with one.
+repeats = 2
+# Cells in parallel.
+jobs = 4
+
+# Each setting is a model id and an effort level. Names are free; score.py prints them sorted.
+[settings]
+opus-high = { model = "claude-opus-5-5", effort = "high" }
+opus-xhigh = { model = "claude-opus-5-5", effort = "xhigh" }
+fable-low = { model = "claude-fable-5-1", effort = "low" }
+fable-high = { model = "claude-fable-5-1", effort = "high" }
+sonnet-medium = { model = "claude-sonnet-5-5", effort = "medium" }
+sonnet-xhigh = { model = "claude-sonnet-5-5", effort = "xhigh" }
+
+[agent]
+# The 2026-10 run: read and run, never write into the task copy, no web, no subagents.
+allowed_tools = ["Read", "Bash", "Glob", "Grep"]
+disallowed_tools = ["WebFetch", "WebSearch", "Task", "Agent", "Write", "Edit", "NotebookEdit"]
+# "bwrap" runs promptfoo and the agent in a bubblewrap sandbox (Linux): own pid namespace, empty home and /tmp,
+# only the task's prompt and src, the cell folder and the Claude credentials file visible.
+# "none" runs them as your user. The agent has Bash, so use "none" only on a machine or container you can lose.
+sandbox = "bwrap"
+
+[limits]
+# Subscription login only: a one-word Haiku call every probe_every seconds reads the 5-hour and weekly usage,
+# new cells wait while the 5-hour window is above pause_at and the run stops above week_stop_at.
+# With an API key there is no such reading and the watcher only logs that.
+watch = true
+pause_at = 0.90
+week_stop_at = 0.95
+probe_every = 600
+
+[judges.sonnet]
+enabled = true
+model = "claude-sonnet-5-5"
+effort = "high"
+
+# The second judge of the 2026-10 run, through the codex CLI (its ChatGPT login or an API key it is set up with).
+# With both judges on, an item counts only when both marked it.
+[judges.sol]
+enabled = false
+model = "gpt-6.1-sol"
+effort = "high"
+
+[score]
+# Pairs compared per task, A minus B. Pairs with a setting that has no answers are skipped.
+pairs = [
+  ["opus-xhigh", "opus-high"], ["fable-high", "opus-high"], ["fable-high", "opus-xhigh"],
+  ["fable-high", "fable-low"], ["sonnet-xhigh", "sonnet-medium"], ["opus-high", "sonnet-xhigh"],
+  ["opus-high", "sonnet-medium"],
+]
+# Two runs of the first setting together against one run of the second.
+two_runs = [["opus-high", "opus-xhigh"], ["fable-low", "fable-high"], ["sonnet-medium", "sonnet-xhigh"]]

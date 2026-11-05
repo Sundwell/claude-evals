@@ -1,0 +1,125 @@
+diff --git a/README.md b/README.md
+index acbd4f8..8e30f76 100644
+--- a/README.md
++++ b/README.md
+@@ -4,3 +4,9 @@ Loans of a small neighbourhood library. A book goes out for 21 days; every day p
+ 
+     python3 -m shelf.cli fine loan.json
+     python3 -m unittest
++
++## Renewals
++
++A reader may renew a loan at most twice. Each renewal adds 14 days to the current due date, so renewing early never costs the reader days. A loan that is already late cannot be renewed. The fine of one loan never goes above 5.00 EUR.
++
++    python3 -m shelf.cli renew loan.json
+diff --git a/shelf/cli.py b/shelf/cli.py
+index b66393d..54370fa 100644
+--- a/shelf/cli.py
++++ b/shelf/cli.py
+@@ -3,7 +3,7 @@ import json
+ import sys
+ from datetime import date
+ 
+-from shelf.loans import Loan, fine
++from shelf.loans import Loan, RenewalRefused, fine, renew
+ 
+ 
+ def load(path):
+@@ -11,7 +11,16 @@ def load(path):
+         raw = json.load(fh)
+     return Loan(book=raw["book"], reader=raw["reader"], start=date.fromisoformat(raw["start"]),
+                 due=date.fromisoformat(raw["due"]),
+-                returned=date.fromisoformat(raw["returned"]) if raw.get("returned") else None)
++                returned=date.fromisoformat(raw["returned"]) if raw.get("returned") else None,
++                renewals=raw.get("renewals", 0))
++
++
++def save(path, loan):
++    raw = {"book": loan.book, "reader": loan.reader, "start": loan.start.isoformat(), "due": loan.due.isoformat()}
++    if loan.returned:
++        raw["returned"] = loan.returned.isoformat()
++    with open(path, "w", encoding="utf-8") as fh:
++        json.dump(raw, fh, indent=1)
+ 
+ 
+ def main(argv):
+@@ -20,6 +29,12 @@ def main(argv):
+     today = date.today()
+     if cmd == "fine":
+         print(f"{loan.reader} owes {fine(loan, today):.2f} EUR for {loan.book}")
++    elif cmd == "renew":
++        try:
++            print(f"Renewed until {renew(loan, today)}")
++        except RenewalRefused as e:
++            sys.exit(f"cannot renew: {e}")
++        save(path, loan)
+     else:
+         sys.exit(f"unknown command {cmd}")
+ 
+diff --git a/shelf/loans.py b/shelf/loans.py
+index 9eca946..570fd39 100644
+--- a/shelf/loans.py
++++ b/shelf/loans.py
+@@ -4,6 +4,9 @@ from datetime import date, timedelta
+ 
+ LOAN_DAYS = 21
+ FINE_PER_DAY = 0.25
++FINE_CAP = 5.00
++MAX_RENEWALS = 2
++RENEW_DAYS = 14
+ 
+ 
+ @dataclass
+@@ -13,6 +16,11 @@ class Loan:
+     start: date
+     due: date
+     returned: date | None = None
++    renewals: int = 0
++
++
++class RenewalRefused(Exception):
++    pass
+ 
+ 
+ def open_loan(book, reader, today):
+@@ -25,4 +33,16 @@ def days_late(loan, today):
+ 
+ 
+ def fine(loan, today):
+-    return round(days_late(loan, today) * FINE_PER_DAY, 2)
++    amount = round(days_late(loan, today) * FINE_PER_DAY, 2)
++    if loan.returned:
++        amount = min(amount, FINE_CAP)
++    return amount
++
++
++def renew(loan, today):
++    if days_late(loan, today) > 0:
++        raise RenewalRefused("the loan is late")
++    if loan.renewals > MAX_RENEWALS:
++        raise RenewalRefused(f"already renewed {loan.renewals} times")
++    loan.due = today + timedelta(days=RENEW_DAYS)
++    loan.renewals += 1
+diff --git a/tests/test_loans.py b/tests/test_loans.py
+index 4effdcd..904ccb8 100644
+--- a/tests/test_loans.py
++++ b/tests/test_loans.py
+@@ -1,7 +1,7 @@
+ import unittest
+ from datetime import date
+ 
+-from shelf.loans import fine, open_loan
++from shelf.loans import fine, open_loan, renew
+ 
+ 
+ class FineTest(unittest.TestCase):
+@@ -12,3 +12,9 @@ class FineTest(unittest.TestCase):
+     def test_fine_per_day(self):
+         loan = open_loan("Dune", "ana", date(2026, 3, 1))
+         self.assertEqual(fine(loan, date(2026, 3, 26)), 1.0)
++
++    def test_renew_adds_two_weeks(self):
++        loan = open_loan("Dune", "ana", date(2026, 3, 1))
++        renew(loan, date(2026, 3, 22))
++        self.assertEqual(loan.due, date(2026, 4, 5))
++        self.assertEqual(loan.renewals, 1)

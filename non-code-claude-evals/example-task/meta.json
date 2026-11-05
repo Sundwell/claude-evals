@@ -1,0 +1,12 @@
+{
+ "id": "example-task",
+ "category": "code-review",
+ "origin": ["invented for this repository: a fictional library project, the change and its defects are planted"],
+ "moment": "the commit before the change; src/repo is the tree at that commit, src/change.diff the change",
+ "why": "Shows the task format on material anyone may read; four planted bugs a reader of the diff can reproduce, one minor issue and one trap in unchanged code.",
+ "key_doubts": [
+  "K05 may be called a bug by some answers; it stays minor because the renewal itself works.",
+  "Seeded keys are easier than real ones: a planted defect is usually cleaner than what breaks in real work."
+ ],
+ "est_minutes_opus_high": 3
+}

@@ -1,0 +1,5188 @@
+{
+ "answers": [
+  {
+   "answer": "cr-eval-align-1__opus-high__r1",
+   "task": "cr-eval-align-1",
+   "setting": "opus-high",
+   "rep": 1,
+   "cost_usd": 1.3322283000000001,
+   "wall_s": 280,
+   "latency_s": 279,
+   "tokens": {
+    "prompt": 1015028,
+    "completion": 23314,
+    "cache_read": 927831,
+    "cache_creation": 85064,
+    "total": 1038342,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:41:19"
+  },
+  {
+   "answer": "cr-eval-align-1__sonnet-medium__r1",
+   "task": "cr-eval-align-1",
+   "setting": "sonnet-medium",
+   "rep": 1,
+   "cost_usd": 0.21949249999999998,
+   "wall_s": 54,
+   "latency_s": 53,
+   "tokens": {
+    "prompt": 184180,
+    "completion": 6095,
+    "cache_read": 146084,
+    "cache_creation": 35981,
+    "total": 190275,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:41:34"
+  },
+  {
+   "answer": "cr-eval-align-1__fable-low__r1",
+   "task": "cr-eval-align-1",
+   "setting": "fable-low",
+   "rep": 1,
+   "cost_usd": 2.5162833499999997,
+   "wall_s": 237,
+   "latency_s": 236,
+   "tokens": {
+    "prompt": 495841,
+    "completion": 17776,
+    "cache_read": 416611,
+    "cache_creation": 76871,
+    "total": 513617,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:43:28"
+  },
+  {
+   "answer": "cr-eval-align-1__fable-high__r1",
+   "task": "cr-eval-align-1",
+   "setting": "fable-high",
+   "rep": 1,
+   "cost_usd": 3.00282135,
+   "wall_s": 263,
+   "latency_s": 261,
+   "tokens": {
+    "prompt": 813342,
+    "completion": 17894,
+    "cache_read": 714557,
+    "cache_creation": 96362,
+    "total": 831236,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:44:50"
+  },
+  {
+   "answer": "cr-eval-align-1__sonnet-xhigh__r1",
+   "task": "cr-eval-align-1",
+   "setting": "sonnet-xhigh",
+   "rep": 1,
+   "cost_usd": 1.1221792000000002,
+   "wall_s": 355,
+   "latency_s": 354,
+   "tokens": {
+    "prompt": 2559699,
+    "completion": 42904,
+    "cache_read": 2445411,
+    "cache_creation": 112121,
+    "total": 2602603,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:46:37"
+  },
+  {
+   "answer": "cr-seenby-crops__sonnet-medium__r1",
+   "task": "cr-seenby-crops",
+   "setting": "sonnet-medium",
+   "rep": 1,
+   "cost_usd": 0.5690217,
+   "wall_s": 192,
+   "latency_s": 191,
+   "tokens": {
+    "prompt": 733484,
+    "completion": 20992,
+    "cache_read": 658066,
+    "cache_creation": 73311,
+    "total": 754476,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:48:55"
+  },
+  {
+   "answer": "cr-seenby-crops__opus-high__r1",
+   "task": "cr-seenby-crops",
+   "setting": "opus-high",
+   "rep": 1,
+   "cost_usd": 1.9519473,
+   "wall_s": 476,
+   "latency_s": 475,
+   "tokens": {
+    "prompt": 1996088,
+    "completion": 37887,
+    "cache_read": 1891981,
+    "cache_creation": 101982,
+    "total": 2033975,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:49:15"
+  },
+  {
+   "answer": "cr-eval-align-1__opus-xhigh__r1",
+   "task": "cr-eval-align-1",
+   "setting": "opus-xhigh",
+   "rep": 1,
+   "cost_usd": 3.3028717999999997,
+   "wall_s": 785,
+   "latency_s": 783,
+   "tokens": {
+    "prompt": 3944988,
+    "completion": 61274,
+    "cache_read": 3777586,
+    "cache_creation": 165237,
+    "total": 4006262,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:50:21"
+  },
+  {
+   "answer": "fc-fullscreen__opus-high__r1",
+   "task": "fc-fullscreen",
+   "setting": "opus-high",
+   "rep": 1,
+   "cost_usd": 1.7637445999999997,
+   "wall_s": 219,
+   "latency_s": 216,
+   "tokens": {
+    "prompt": 2614174,
+    "completion": 13904,
+    "cache_read": 2488902,
+    "cache_creation": 123495,
+    "total": 2628078,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:50:50"
+  },
+  {
+   "answer": "fc-fullscreen__sonnet-medium__r1",
+   "task": "fc-fullscreen",
+   "setting": "sonnet-medium",
+   "rep": 1,
+   "cost_usd": 0.4404947000000001,
+   "wall_s": 101,
+   "latency_s": 98,
+   "tokens": {
+    "prompt": 983228,
+    "completion": 10702,
+    "cache_read": 920375,
+    "cache_creation": 61088,
+    "total": 993930,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:51:49"
+  },
+  {
+   "answer": "fc-fullscreen__fable-low__r1",
+   "task": "fc-fullscreen",
+   "setting": "fable-low",
+   "rep": 1,
+   "cost_usd": 3.5182202,
+   "wall_s": 175,
+   "latency_s": 173,
+   "tokens": {
+    "prompt": 948761,
+    "completion": 14158,
+    "cache_read": 816504,
+    "cache_creation": 130186,
+    "total": 962919,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:52:11"
+  },
+  {
+   "answer": "fc-hud__opus-high__r1",
+   "task": "fc-hud",
+   "setting": "opus-high",
+   "rep": 1,
+   "cost_usd": 0.7618027,
+   "wall_s": 106,
+   "latency_s": 104,
+   "tokens": {
+    "prompt": 752634,
+    "completion": 8953,
+    "cache_read": 694666,
+    "cache_creation": 56236,
+    "total": 761587,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:52:37"
+  },
+  {
+   "answer": "fc-hud__fable-low__r1",
+   "task": "fc-hud",
+   "setting": "fable-low",
+   "rep": 1,
+   "cost_usd": 1.63001175,
+   "wall_s": 120,
+   "latency_s": 118,
+   "tokens": {
+    "prompt": 263886,
+    "completion": 10180,
+    "cache_read": 208595,
+    "cache_creation": 53407,
+    "total": 274066,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:54:11"
+  },
+  {
+   "answer": "fc-fullscreen__sonnet-xhigh__r1",
+   "task": "fc-fullscreen",
+   "setting": "sonnet-xhigh",
+   "rep": 1,
+   "cost_usd": 1.3152265,
+   "wall_s": 251,
+   "latency_s": 248,
+   "tokens": {
+    "prompt": 3628451,
+    "completion": 30702,
+    "cache_read": 3461163,
+    "cache_creation": 165507,
+    "total": 3659153,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:54:32"
+  },
+  {
+   "answer": "fc-hud__opus-xhigh__r1",
+   "task": "fc-hud",
+   "setting": "opus-xhigh",
+   "rep": 1,
+   "cost_usd": 1.2441931000000002,
+   "wall_s": 191,
+   "latency_s": 189,
+   "tokens": {
+    "prompt": 1432060,
+    "completion": 15480,
+    "cache_read": 1345983,
+    "cache_creation": 84333,
+    "total": 1447540,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:55:01"
+  },
+  {
+   "answer": "fc-hud__sonnet-medium__r1",
+   "task": "fc-hud",
+   "setting": "sonnet-medium",
+   "rep": 1,
+   "cost_usd": 0.2345925,
+   "wall_s": 50,
+   "latency_s": 48,
+   "tokens": {
+    "prompt": 264738,
+    "completion": 5234,
+    "cache_read": 223035,
+    "cache_creation": 39991,
+    "total": 269972,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:55:01"
+  },
+  {
+   "answer": "fc-fullscreen__fable-high__r1",
+   "task": "fc-fullscreen",
+   "setting": "fable-high",
+   "rep": 1,
+   "cost_usd": 5.151310949999999,
+   "wall_s": 312,
+   "latency_s": 310,
+   "tokens": {
+    "prompt": 1551277,
+    "completion": 18726,
+    "cache_read": 1355507,
+    "cache_creation": 193667,
+    "total": 1570003,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:55:07"
+  },
+  {
+   "answer": "cr-seenby-crops__fable-high__r1",
+   "task": "cr-seenby-crops",
+   "setting": "fable-high",
+   "rep": 1,
+   "cost_usd": 4.98161585,
+   "wall_s": 641,
+   "latency_s": 640,
+   "tokens": {
+    "prompt": 1437553,
+    "completion": 43424,
+    "cache_read": 1311027,
+    "cache_creation": 123909,
+    "total": 1480977,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:55:32"
+  },
+  {
+   "answer": "fc-fullscreen__opus-xhigh__r1",
+   "task": "fc-fullscreen",
+   "setting": "opus-xhigh",
+   "rep": 1,
+   "cost_usd": 3.4304405000000013,
+   "wall_s": 412,
+   "latency_s": 410,
+   "tokens": {
+    "prompt": 6678866,
+    "completion": 33039,
+    "cache_read": 6492099,
+    "cache_creation": 184950,
+    "total": 6711905,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:55:47"
+  },
+  {
+   "answer": "fc-hud__fable-high__r1",
+   "task": "fc-hud",
+   "setting": "fable-high",
+   "rep": 1,
+   "cost_usd": 2.5773335,
+   "wall_s": 211,
+   "latency_s": 209,
+   "tokens": {
+    "prompt": 629679,
+    "completion": 17314,
+    "cache_read": 548486,
+    "cache_creation": 79149,
+    "total": 646993,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:56:08"
+  },
+  {
+   "answer": "fc-roamgate__sonnet-medium__r1",
+   "task": "fc-roamgate",
+   "setting": "sonnet-medium",
+   "rep": 1,
+   "cost_usd": 0.26951780000000003,
+   "wall_s": 63,
+   "latency_s": 60,
+   "tokens": {
+    "prompt": 350979,
+    "completion": 6806,
+    "cache_read": 306558,
+    "cache_creation": 42709,
+    "total": 357785,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:56:50"
+  },
+  {
+   "answer": "fc-roamgate__fable-low__r1",
+   "task": "fc-roamgate",
+   "setting": "fable-low",
+   "rep": 1,
+   "cost_usd": 2.9141554999999997,
+   "wall_s": 136,
+   "latency_s": 133,
+   "tokens": {
+    "prompt": 537601,
+    "completion": 10786,
+    "cache_read": 422294,
+    "cache_creation": 113423,
+    "total": 548387,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:57:23"
+  },
+  {
+   "answer": "fc-hud__sonnet-xhigh__r1",
+   "task": "fc-hud",
+   "setting": "sonnet-xhigh",
+   "rep": 1,
+   "cost_usd": 0.6191240000000001,
+   "wall_s": 183,
+   "latency_s": 182,
+   "tokens": {
+    "prompt": 1241419,
+    "completion": 20020,
+    "cache_read": 1163195,
+    "cache_creation": 76484,
+    "total": 1261439,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:57:35"
+  },
+  {
+   "answer": "cr-seenby-crops__fable-low__r1",
+   "task": "cr-seenby-crops",
+   "setting": "fable-low",
+   "rep": 1,
+   "cost_usd": 4.30115985,
+   "wall_s": 855,
+   "latency_s": 853,
+   "tokens": {
+    "prompt": 1138516,
+    "completion": 36109,
+    "cache_read": 1024203,
+    "cache_creation": 111822,
+    "total": 1174625,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:57:42"
+  },
+  {
+   "answer": "cr-seenby-crops__opus-xhigh__r1",
+   "task": "cr-seenby-crops",
+   "setting": "opus-xhigh",
+   "rep": 1,
+   "cost_usd": 3.6725107,
+   "wall_s": 1002,
+   "latency_s": 1000,
+   "tokens": {
+    "prompt": 4271953,
+    "completion": 78365,
+    "cache_read": 4109398,
+    "cache_creation": 160414,
+    "total": 4350318,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:58:15"
+  },
+  {
+   "answer": "fc-telegram__opus-high__r1",
+   "task": "fc-telegram",
+   "setting": "opus-high",
+   "rep": 1,
+   "cost_usd": 0.7551294,
+   "wall_s": 110,
+   "latency_s": 109,
+   "tokens": {
+    "prompt": 702771,
+    "completion": 10025,
+    "cache_read": 647833,
+    "cache_creation": 53149,
+    "total": 712796,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:58:40"
+  },
+  {
+   "answer": "fc-roamgate__opus-high__r1",
+   "task": "fc-roamgate",
+   "setting": "opus-high",
+   "rep": 1,
+   "cost_usd": 1.8063048000000002,
+   "wall_s": 224,
+   "latency_s": 220,
+   "tokens": {
+    "prompt": 3314213,
+    "completion": 18535,
+    "cache_read": 3213314,
+    "cache_creation": 99111,
+    "total": 3332748,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:58:44"
+  },
+  {
+   "answer": "fc-telegram__sonnet-medium__r1",
+   "task": "fc-telegram",
+   "setting": "sonnet-medium",
+   "rep": 1,
+   "cost_usd": 0.21186329999999998,
+   "wall_s": 46,
+   "latency_s": 45,
+   "tokens": {
+    "prompt": 185064,
+    "completion": 5697,
+    "cache_read": 147640,
+    "cache_creation": 35655,
+    "total": 190761,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:59:01"
+  },
+  {
+   "answer": "fc-roamgate__fable-high__r1",
+   "task": "fc-roamgate",
+   "setting": "fable-high",
+   "rep": 1,
+   "cost_usd": 3.600826,
+   "wall_s": 222,
+   "latency_s": 219,
+   "tokens": {
+    "prompt": 711055,
+    "completion": 17909,
+    "cache_read": 581176,
+    "cache_creation": 127931,
+    "total": 728964,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:59:14"
+  },
+  {
+   "answer": "fc-telegram__fable-low__r1",
+   "task": "fc-telegram",
+   "setting": "fable-low",
+   "rep": 1,
+   "cost_usd": 1.88359155,
+   "wall_s": 104,
+   "latency_s": 103,
+   "tokens": {
+    "prompt": 361402,
+    "completion": 8333,
+    "cache_read": 289779,
+    "cache_creation": 69676,
+    "total": 369735,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:59:19"
+  },
+  {
+   "answer": "fc-roamgate__sonnet-xhigh__r1",
+   "task": "fc-roamgate",
+   "setting": "sonnet-xhigh",
+   "rep": 1,
+   "cost_usd": 1.0076758000000001,
+   "wall_s": 206,
+   "latency_s": 203,
+   "tokens": {
+    "prompt": 2944181,
+    "completion": 23111,
+    "cache_read": 2818758,
+    "cache_creation": 123651,
+    "total": 2967292,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:59:34"
+  },
+  {
+   "answer": "intake-merchant-groups__opus-high__r1",
+   "task": "intake-merchant-groups",
+   "setting": "opus-high",
+   "rep": 1,
+   "cost_usd": 0.29315369999999996,
+   "wall_s": 49,
+   "latency_s": 48,
+   "tokens": {
+    "prompt": 141617,
+    "completion": 4101,
+    "cache_read": 116411,
+    "cache_creation": 23507,
+    "total": 145718,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:59:34"
+  },
+  {
+   "answer": "intake-merchant-groups__fable-low__r1",
+   "task": "intake-merchant-groups",
+   "setting": "fable-low",
+   "rep": 1,
+   "cost_usd": 0.48595525000000006,
+   "wall_s": 38,
+   "latency_s": 36,
+   "tokens": {
+    "prompt": 73905,
+    "completion": 2130,
+    "cache_read": 53815,
+    "cache_creation": 18307,
+    "total": 76035,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:59:52"
+  },
+  {
+   "answer": "intake-merchant-groups__sonnet-medium__r1",
+   "task": "intake-merchant-groups",
+   "setting": "sonnet-medium",
+   "rep": 1,
+   "cost_usd": 0.0580694,
+   "wall_s": 19,
+   "latency_s": 17,
+   "tokens": {
+    "prompt": 36501,
+    "completion": 1921,
+    "cache_read": 25059,
+    "cache_creation": 9751,
+    "total": 38422,
+    "requests": 1
+   },
+   "finished": "2026-10-17T22:59:53"
+  },
+  {
+   "answer": "fc-telegram__fable-high__r1",
+   "task": "fc-telegram",
+   "setting": "fable-high",
+   "rep": 1,
+   "cost_usd": 1.9676098,
+   "wall_s": 159,
+   "latency_s": 157,
+   "tokens": {
+    "prompt": 293417,
+    "completion": 10945,
+    "cache_read": 223292,
+    "cache_creation": 68178,
+    "total": 304362,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:00:21"
+  },
+  {
+   "answer": "intake-merchant-groups__fable-high__r1",
+   "task": "intake-merchant-groups",
+   "setting": "fable-high",
+   "rep": 1,
+   "cost_usd": 0.92939025,
+   "wall_s": 76,
+   "latency_s": 74,
+   "tokens": {
+    "prompt": 93486,
+    "completion": 4627,
+    "cache_read": 57523,
+    "cache_creation": 34180,
+    "total": 98113,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:00:35"
+  },
+  {
+   "answer": "fc-telegram__sonnet-xhigh__r1",
+   "task": "fc-telegram",
+   "setting": "sonnet-xhigh",
+   "rep": 1,
+   "cost_usd": 0.5151869,
+   "wall_s": 125,
+   "latency_s": 123,
+   "tokens": {
+    "prompt": 672923,
+    "completion": 15306,
+    "cache_read": 595501,
+    "cache_creation": 75641,
+    "total": 688229,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:00:45"
+  },
+  {
+   "answer": "fc-telegram__opus-xhigh__r1",
+   "task": "fc-telegram",
+   "setting": "opus-xhigh",
+   "rep": 1,
+   "cost_usd": 1.1915673,
+   "wall_s": 209,
+   "latency_s": 207,
+   "tokens": {
+    "prompt": 896292,
+    "completion": 20695,
+    "cache_read": 817050,
+    "cache_creation": 77455,
+    "total": 916987,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:00:52"
+  },
+  {
+   "answer": "intake-news-0927__opus-high__r1",
+   "task": "intake-news-0927",
+   "setting": "opus-high",
+   "rep": 1,
+   "cost_usd": 0.44609879999999996,
+   "wall_s": 67,
+   "latency_s": 65,
+   "tokens": {
+    "prompt": 67385,
+    "completion": 5989,
+    "cache_read": 25555,
+    "cache_creation": 40186,
+    "total": 73374,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:00:58"
+  },
+  {
+   "answer": "intake-news-0927__fable-low__r1",
+   "task": "intake-news-0927",
+   "setting": "fable-low",
+   "rep": 1,
+   "cost_usd": 0.91727255,
+   "wall_s": 41,
+   "latency_s": 40,
+   "tokens": {
+    "prompt": 86362,
+    "completion": 2528,
+    "cache_read": 45667,
+    "cache_creation": 38991,
+    "total": 88890,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:01:02"
+  },
+  {
+   "answer": "intake-merchant-groups__opus-xhigh__r1",
+   "task": "intake-merchant-groups",
+   "setting": "opus-xhigh",
+   "rep": 1,
+   "cost_usd": 0.773624,
+   "wall_s": 133,
+   "latency_s": 132,
+   "tokens": {
+    "prompt": 574813,
+    "completion": 11298,
+    "cache_read": 517565,
+    "cache_creation": 55535,
+    "total": 586111,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:01:15"
+  },
+  {
+   "answer": "intake-merchant-groups__sonnet-xhigh__r1",
+   "task": "intake-merchant-groups",
+   "setting": "sonnet-xhigh",
+   "rep": 1,
+   "cost_usd": 0.38609560000000004,
+   "wall_s": 106,
+   "latency_s": 104,
+   "tokens": {
+    "prompt": 328500,
+    "completion": 13309,
+    "cache_read": 270301,
+    "cache_creation": 56494,
+    "total": 341809,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:01:20"
+  },
+  {
+   "answer": "intake-news-0927__sonnet-medium__r1",
+   "task": "intake-news-0927",
+   "setting": "sonnet-medium",
+   "rep": 1,
+   "cost_usd": 0.2103647,
+   "wall_s": 53,
+   "latency_s": 51,
+   "tokens": {
+    "prompt": 80721,
+    "completion": 5771,
+    "cache_read": 41949,
+    "cache_creation": 37128,
+    "total": 86492,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:01:38"
+  },
+  {
+   "answer": "intake-news-0927__fable-high__r1",
+   "task": "intake-news-0927",
+   "setting": "fable-high",
+   "rep": 1,
+   "cost_usd": 1.04451555,
+   "wall_s": 73,
+   "latency_s": 72,
+   "tokens": {
+    "prompt": 86386,
+    "completion": 5068,
+    "cache_read": 45679,
+    "cache_creation": 39003,
+    "total": 91454,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:01:48"
+  },
+  {
+   "answer": "intake-retention-voices__fable-low__r1",
+   "task": "intake-retention-voices",
+   "setting": "fable-low",
+   "rep": 1,
+   "cost_usd": 1.59483,
+   "wall_s": 56,
+   "latency_s": 54,
+   "tokens": {
+    "prompt": 183620,
+    "completion": 3777,
+    "cache_read": 112424,
+    "cache_creation": 69403,
+    "total": 187397,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:02:11"
+  },
+  {
+   "answer": "intake-retention-voices__opus-high__r1",
+   "task": "intake-retention-voices",
+   "setting": "opus-high",
+   "rep": 1,
+   "cost_usd": 0.8336743,
+   "wall_s": 82,
+   "latency_s": 80,
+   "tokens": {
+    "prompt": 373714,
+    "completion": 6924,
+    "cache_read": 292384,
+    "cache_creation": 79619,
+    "total": 380638,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:02:20"
+  },
+  {
+   "answer": "intake-news-0927__opus-xhigh__r1",
+   "task": "intake-news-0927",
+   "setting": "opus-xhigh",
+   "rep": 1,
+   "cost_usd": 0.8556091999999998,
+   "wall_s": 174,
+   "latency_s": 173,
+   "tokens": {
+    "prompt": 333991,
+    "completion": 17555,
+    "cache_read": 276147,
+    "cache_creation": 56190,
+    "total": 351546,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:02:47"
+  },
+  {
+   "answer": "fc-roamgate__opus-xhigh__r1",
+   "task": "fc-roamgate",
+   "setting": "opus-xhigh",
+   "rep": 1,
+   "cost_usd": 2.6386522,
+   "wall_s": 484,
+   "latency_s": 481,
+   "tokens": {
+    "prompt": 5018665,
+    "completion": 32718,
+    "cache_read": 4890236,
+    "cache_creation": 126613,
+    "total": 5051383,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:03:05"
+  },
+  {
+   "answer": "intake-retention-voices__sonnet-medium__r1",
+   "task": "intake-retention-voices",
+   "setting": "sonnet-medium",
+   "rep": 1,
+   "cost_usd": 0.3820983,
+   "wall_s": 89,
+   "latency_s": 87,
+   "tokens": {
+    "prompt": 352160,
+    "completion": 9459,
+    "cache_read": 285708,
+    "cache_creation": 64741,
+    "total": 361619,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:03:06"
+  },
+  {
+   "answer": "intake-wallet-slack__fable-low__r1",
+   "task": "intake-wallet-slack",
+   "setting": "fable-low",
+   "rep": 1,
+   "cost_usd": 0.7686247500000001,
+   "wall_s": 31,
+   "latency_s": 29,
+   "tokens": {
+    "prompt": 82524,
+    "completion": 2053,
+    "cache_read": 48057,
+    "cache_creation": 32716,
+    "total": 84577,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:03:18"
+  },
+  {
+   "answer": "intake-wallet-slack__opus-high__r1",
+   "task": "intake-wallet-slack",
+   "setting": "opus-high",
+   "rep": 1,
+   "cost_usd": 0.47051699999999996,
+   "wall_s": 77,
+   "latency_s": 75,
+   "tokens": {
+    "prompt": 184785,
+    "completion": 6394,
+    "cache_read": 143815,
+    "cache_creation": 39273,
+    "total": 191179,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:03:28"
+  },
+  {
+   "answer": "intake-retention-voices__fable-high__r1",
+   "task": "intake-retention-voices",
+   "setting": "fable-high",
+   "rep": 1,
+   "cost_usd": 2.12035725,
+   "wall_s": 137,
+   "latency_s": 136,
+   "tokens": {
+    "prompt": 279899,
+    "completion": 9517,
+    "cache_read": 198347,
+    "cache_creation": 79727,
+    "total": 289416,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:03:37"
+  },
+  {
+   "answer": "intake-wallet-slack__sonnet-medium__r1",
+   "task": "intake-wallet-slack",
+   "setting": "sonnet-medium",
+   "rep": 1,
+   "cost_usd": 0.147432,
+   "wall_s": 32,
+   "latency_s": 30,
+   "tokens": {
+    "prompt": 71968,
+    "completion": 3256,
+    "cache_read": 42610,
+    "cache_creation": 27667,
+    "total": 75224,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:03:38"
+  },
+  {
+   "answer": "intake-news-0927__sonnet-xhigh__r1",
+   "task": "intake-news-0927",
+   "setting": "sonnet-xhigh",
+   "rep": 1,
+   "cost_usd": 0.4921213,
+   "wall_s": 179,
+   "latency_s": 177,
+   "tokens": {
+    "prompt": 324740,
+    "completion": 22962,
+    "cache_read": 264055,
+    "cache_creation": 59033,
+    "total": 347702,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:03:51"
+  },
+  {
+   "answer": "intake-retention-voices__sonnet-xhigh__r1",
+   "task": "intake-retention-voices",
+   "setting": "sonnet-xhigh",
+   "rep": 1,
+   "cost_usd": 0.6100647,
+   "wall_s": 154,
+   "latency_s": 152,
+   "tokens": {
+    "prompt": 715121,
+    "completion": 19908,
+    "cache_read": 626312,
+    "cache_creation": 87092,
+    "total": 735029,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:04:22"
+  },
+  {
+   "answer": "cr-seenby-crops__sonnet-xhigh__r1",
+   "task": "cr-seenby-crops",
+   "setting": "sonnet-xhigh",
+   "rep": 1,
+   "cost_usd": 2.5305989,
+   "wall_s": 1082,
+   "latency_s": 1080,
+   "tokens": {
+    "prompt": 6930703,
+    "completion": 107149,
+    "cache_read": 6732098,
+    "cache_creation": 196426,
+    "total": 7037852,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:04:39"
+  },
+  {
+   "answer": "intake-wallet-slack__fable-high__r1",
+   "task": "intake-wallet-slack",
+   "setting": "fable-high",
+   "rep": 1,
+   "cost_usd": 1.2365345,
+   "wall_s": 99,
+   "latency_s": 97,
+   "tokens": {
+    "prompt": 138705,
+    "completion": 7194,
+    "cache_read": 94254,
+    "cache_creation": 42668,
+    "total": 145899,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:04:44"
+  },
+  {
+   "answer": "intake-wallet-slack__opus-xhigh__r1",
+   "task": "intake-wallet-slack",
+   "setting": "opus-xhigh",
+   "rep": 1,
+   "cost_usd": 0.9284236999999999,
+   "wall_s": 149,
+   "latency_s": 147,
+   "tokens": {
+    "prompt": 847099,
+    "completion": 13973,
+    "cache_read": 782901,
+    "cache_creation": 62481,
+    "total": 861072,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:04:50"
+  },
+  {
+   "answer": "intake-wallet-slack__sonnet-xhigh__r1",
+   "task": "intake-wallet-slack",
+   "setting": "sonnet-xhigh",
+   "rep": 1,
+   "cost_usd": 0.36474860000000003,
+   "wall_s": 112,
+   "latency_s": 110,
+   "tokens": {
+    "prompt": 327525,
+    "completion": 14131,
+    "cache_read": 276876,
+    "cache_creation": 48946,
+    "total": 341656,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:05:10"
+  },
+  {
+   "answer": "intake-retention-voices__opus-xhigh__r1",
+   "task": "intake-retention-voices",
+   "setting": "opus-xhigh",
+   "rep": 1,
+   "cost_usd": 1.7732024999999998,
+   "wall_s": 293,
+   "latency_s": 291,
+   "tokens": {
+    "prompt": 1475602,
+    "completion": 30590,
+    "cache_read": 1362745,
+    "cache_creation": 111126,
+    "total": 1506192,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:05:55"
+  },
+  {
+   "answer": "cr-desk-nav__sonnet-medium__r1",
+   "task": "cr-desk-nav",
+   "setting": "sonnet-medium",
+   "rep": 1,
+   "cost_usd": 0.1829965,
+   "wall_s": 61,
+   "latency_s": 57,
+   "tokens": {
+    "prompt": 139427,
+    "completion": 6427,
+    "cache_read": 109937,
+    "cache_creation": 27500,
+    "total": 145854,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:15:40"
+  },
+  {
+   "answer": "cr-desk-push__sonnet-medium__r1",
+   "task": "cr-desk-push",
+   "setting": "sonnet-medium",
+   "rep": 1,
+   "cost_usd": 0.6063148000000002,
+   "wall_s": 254,
+   "latency_s": 253,
+   "tokens": {
+    "prompt": 682800,
+    "completion": 27767,
+    "cache_read": 613068,
+    "cache_creation": 67604,
+    "total": 710567,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:19:54"
+  },
+  {
+   "answer": "cr-desk-nav__opus-high__r1",
+   "task": "cr-desk-nav",
+   "setting": "opus-high",
+   "rep": 1,
+   "cost_usd": 1.3811276000000001,
+   "wall_s": 317,
+   "latency_s": 314,
+   "tokens": {
+    "prompt": 1117343,
+    "completion": 28044,
+    "cache_read": 1037654,
+    "cache_creation": 77671,
+    "total": 1145387,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:19:57"
+  },
+  {
+   "answer": "cr-desk-nav__fable-low__r1",
+   "task": "cr-desk-nav",
+   "setting": "fable-low",
+   "rep": 1,
+   "cost_usd": 2.6701490500000005,
+   "wall_s": 372,
+   "latency_s": 368,
+   "tokens": {
+    "prompt": 760668,
+    "completion": 21045,
+    "cache_read": 684945,
+    "cache_creation": 73327,
+    "total": 781713,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:20:51"
+  },
+  {
+   "answer": "cr-desk-push__fable-low__r1",
+   "task": "cr-desk-push",
+   "setting": "fable-low",
+   "rep": 1,
+   "cost_usd": 3.8616409999999997,
+   "wall_s": 570,
+   "latency_s": 567,
+   "tokens": {
+    "prompt": 818785,
+    "completion": 34403,
+    "cache_read": 718398,
+    "cache_creation": 97995,
+    "total": 853188,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:24:10"
+  },
+  {
+   "answer": "cr-desk-push__opus-high__r1",
+   "task": "cr-desk-push",
+   "setting": "opus-high",
+   "rep": 1,
+   "cost_usd": 2.2066452,
+   "wall_s": 582,
+   "latency_s": 578,
+   "tokens": {
+    "prompt": 1794811,
+    "completion": 52120,
+    "cache_read": 1688451,
+    "cache_creation": 104208,
+    "total": 1846931,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:24:21"
+  },
+  {
+   "answer": "cr-desk-nav__opus-xhigh__r1",
+   "task": "cr-desk-nav",
+   "setting": "opus-xhigh",
+   "rep": 1,
+   "cost_usd": 2.2457584,
+   "wall_s": 602,
+   "latency_s": 599,
+   "tokens": {
+    "prompt": 1429735,
+    "completion": 52513,
+    "cache_read": 1309873,
+    "cache_creation": 117846,
+    "total": 1482248,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:24:42"
+  },
+  {
+   "answer": "cr-desk-nav__sonnet-xhigh__r1",
+   "task": "cr-desk-nav",
+   "setting": "sonnet-xhigh",
+   "rep": 1,
+   "cost_usd": 1.4247082,
+   "wall_s": 606,
+   "latency_s": 602,
+   "tokens": {
+    "prompt": 1466371,
+    "completion": 74975,
+    "cache_read": 1328854,
+    "cache_creation": 135503,
+    "total": 1541346,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:24:45"
+  },
+  {
+   "answer": "cr-desk-nav__fable-high__r1",
+   "task": "cr-desk-nav",
+   "setting": "fable-high",
+   "rep": 1,
+   "cost_usd": 4.0907593,
+   "wall_s": 627,
+   "latency_s": 624,
+   "tokens": {
+    "prompt": 1286194,
+    "completion": 37959,
+    "cache_read": 1189122,
+    "cache_creation": 94548,
+    "total": 1324153,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:25:07"
+  },
+  {
+   "answer": "cr-desk-push__opus-xhigh__r1",
+   "task": "cr-desk-push",
+   "setting": "opus-xhigh",
+   "rep": 1,
+   "cost_usd": 2.9669151000000005,
+   "wall_s": 859,
+   "latency_s": 855,
+   "tokens": {
+    "prompt": 2194701,
+    "completion": 75730,
+    "cache_read": 2062568,
+    "cache_creation": 129977,
+    "total": 2270431,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:28:58"
+  },
+  {
+   "answer": "cr-desk-push__fable-high__r1",
+   "task": "cr-desk-push",
+   "setting": "fable-high",
+   "rep": 1,
+   "cost_usd": 5.948931749999999,
+   "wall_s": 870,
+   "latency_s": 867,
+   "tokens": {
+    "prompt": 1297118,
+    "completion": 59069,
+    "cache_read": 1159481,
+    "cache_creation": 135117,
+    "total": 1356187,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:29:10"
+  },
+  {
+   "answer": "plan-gateway-fuse__opus-high__r1",
+   "task": "plan-gateway-fuse",
+   "setting": "opus-high",
+   "rep": 1,
+   "cost_usd": 1.7074175,
+   "wall_s": 412,
+   "latency_s": 410,
+   "tokens": {
+    "prompt": 1280731,
+    "completion": 35213,
+    "cache_read": 1182163,
+    "cache_creation": 95852,
+    "total": 1315944,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:31:58"
+  },
+  {
+   "answer": "plan-copy-shop__sonnet-medium__r1",
+   "task": "plan-copy-shop",
+   "setting": "sonnet-medium",
+   "rep": 1,
+   "cost_usd": 2.0881659000000004,
+   "wall_s": 516,
+   "latency_s": 514,
+   "tokens": {
+    "prompt": 7365441,
+    "completion": 56992,
+    "cache_read": 7161457,
+    "cache_creation": 201305,
+    "total": 7422433,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:33:18"
+  },
+  {
+   "answer": "plan-copy-shop__fable-low__r1",
+   "task": "plan-copy-shop",
+   "setting": "fable-low",
+   "rep": 1,
+   "cost_usd": 5.920522700000001,
+   "wall_s": 581,
+   "latency_s": 579,
+   "tokens": {
+    "prompt": 977456,
+    "completion": 40405,
+    "cache_read": 789582,
+    "cache_creation": 185059,
+    "total": 1017861,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:33:50"
+  },
+  {
+   "answer": "plan-gateway-fuse__fable-low__r1",
+   "task": "plan-gateway-fuse",
+   "setting": "fable-low",
+   "rep": 1,
+   "cost_usd": 2.7755344,
+   "wall_s": 305,
+   "latency_s": 303,
+   "tokens": {
+    "prompt": 277663,
+    "completion": 22789,
+    "cache_read": 195494,
+    "cache_creation": 79333,
+    "total": 300452,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:34:15"
+  },
+  {
+   "answer": "plan-gateway-fuse__sonnet-medium__r1",
+   "task": "plan-gateway-fuse",
+   "setting": "sonnet-medium",
+   "rep": 1,
+   "cost_usd": 0.24526010000000004,
+   "wall_s": 81,
+   "latency_s": 79,
+   "tokens": {
+    "prompt": 207494,
+    "completion": 9482,
+    "cache_read": 171492,
+    "cache_creation": 33312,
+    "total": 216976,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:34:39"
+  },
+  {
+   "answer": "plan-copy-shop__fable-high__r1",
+   "task": "plan-copy-shop",
+   "setting": "fable-high",
+   "rep": 1,
+   "cost_usd": 7.100086699999999,
+   "wall_s": 692,
+   "latency_s": 690,
+   "tokens": {
+    "prompt": 1610542,
+    "completion": 49131,
+    "cache_read": 1392398,
+    "cache_creation": 215233,
+    "total": 1659673,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:35:53"
+  },
+  {
+   "answer": "plan-copy-shop__opus-high__r1",
+   "task": "plan-copy-shop",
+   "setting": "opus-high",
+   "rep": 1,
+   "cost_usd": 6.187707799999998,
+   "wall_s": 994,
+   "latency_s": 992,
+   "tokens": {
+    "prompt": 13476025,
+    "completion": 77754,
+    "cache_read": 13224903,
+    "cache_creation": 248395,
+    "total": 13553779,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:36:31"
+  },
+  {
+   "answer": "plan-gateway-fuse__fable-high__r1",
+   "task": "plan-gateway-fuse",
+   "setting": "fable-high",
+   "rep": 1,
+   "cost_usd": 4.5499019,
+   "wall_s": 463,
+   "latency_s": 461,
+   "tokens": {
+    "prompt": 428736,
+    "completion": 34711,
+    "cache_read": 288804,
+    "cache_creation": 137064,
+    "total": 463447,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:39:42"
+  },
+  {
+   "answer": "cr-desk-push__sonnet-xhigh__r1",
+   "task": "cr-desk-push",
+   "setting": "sonnet-xhigh",
+   "rep": 1,
+   "cost_usd": 2.6428955999999997,
+   "wall_s": 1207,
+   "latency_s": 1205,
+   "tokens": {
+    "prompt": 3681184,
+    "completion": 146503,
+    "cache_read": 3470386,
+    "cache_creation": 208634,
+    "total": 3827687,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:40:01"
+  },
+  {
+   "answer": "plan-copy-shop__opus-xhigh__r1",
+   "task": "plan-copy-shop",
+   "setting": "opus-xhigh",
+   "rep": 1,
+   "cost_usd": 8.053346999999999,
+   "wall_s": 1249,
+   "latency_s": 1247,
+   "tokens": {
+    "prompt": 16881404,
+    "completion": 111275,
+    "cache_read": 16564359,
+    "cache_creation": 314304,
+    "total": 16992679,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:41:40"
+  },
+  {
+   "answer": "plan-gateway-fuse__opus-xhigh__r1",
+   "task": "plan-gateway-fuse",
+   "setting": "opus-xhigh",
+   "rep": 1,
+   "cost_usd": 3.4648244999999998,
+   "wall_s": 822,
+   "latency_s": 820,
+   "tokens": {
+    "prompt": 2352264,
+    "completion": 80367,
+    "cache_read": 2171638,
+    "cache_creation": 177902,
+    "total": 2432631,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:42:40"
+  },
+  {
+   "answer": "plan-copy-shop__sonnet-xhigh__r1",
+   "task": "plan-copy-shop",
+   "setting": "sonnet-xhigh",
+   "rep": 1,
+   "cost_usd": 4.2531402,
+   "wall_s": 1105,
+   "latency_s": 1103,
+   "tokens": {
+    "prompt": 15022165,
+    "completion": 140233,
+    "cache_read": 14673020,
+    "cache_creation": 346430,
+    "total": 15162398,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:43:10"
+  },
+  {
+   "answer": "plan-seenby-eval__fable-low__r1",
+   "task": "plan-seenby-eval",
+   "setting": "fable-low",
+   "rep": 1,
+   "cost_usd": 4.66642585,
+   "wall_s": 505,
+   "latency_s": 503,
+   "tokens": {
+    "prompt": 848832,
+    "completion": 29219,
+    "cache_read": 694649,
+    "cache_creation": 151509,
+    "total": 878051,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:44:17"
+  },
+  {
+   "answer": "plan-seenby-eval__sonnet-medium__r1",
+   "task": "plan-seenby-eval",
+   "setting": "sonnet-medium",
+   "rep": 1,
+   "cost_usd": 0.9683402999999999,
+   "wall_s": 316,
+   "latency_s": 314,
+   "tokens": {
+    "prompt": 1337727,
+    "completion": 37317,
+    "cache_read": 1216927,
+    "cache_creation": 118348,
+    "total": 1375044,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:44:58"
+  },
+  {
+   "answer": "plan-seenby-eval__fable-high__r1",
+   "task": "plan-seenby-eval",
+   "setting": "fable-high",
+   "rep": 1,
+   "cost_usd": 5.4320531,
+   "wall_s": 545,
+   "latency_s": 543,
+   "tokens": {
+    "prompt": 876423,
+    "completion": 38768,
+    "cache_read": 707998,
+    "cache_creation": 165751,
+    "total": 915191,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:45:36"
+  },
+  {
+   "answer": "plan-gateway-fuse__sonnet-xhigh__r1",
+   "task": "plan-gateway-fuse",
+   "setting": "sonnet-xhigh",
+   "rep": 1,
+   "cost_usd": 2.2468093000000002,
+   "wall_s": 817,
+   "latency_s": 815,
+   "tokens": {
+    "prompt": 3904593,
+    "completion": 104022,
+    "cache_read": 3692554,
+    "cache_creation": 209287,
+    "total": 4008615,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:47:27"
+  },
+  {
+   "answer": "plan-send-notes__sonnet-medium__r1",
+   "task": "plan-send-notes",
+   "setting": "sonnet-medium",
+   "rep": 1,
+   "cost_usd": 0.6973860000000001,
+   "wall_s": 177,
+   "latency_s": 175,
+   "tokens": {
+    "prompt": 976563,
+    "completion": 20718,
+    "cache_read": 872306,
+    "cache_creation": 101690,
+    "total": 997281,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:47:54"
+  },
+  {
+   "answer": "plan-seenby-eval__opus-high__r1",
+   "task": "plan-seenby-eval",
+   "setting": "opus-high",
+   "rep": 1,
+   "cost_usd": 3.8931437999999994,
+   "wall_s": 878,
+   "latency_s": 876,
+   "tokens": {
+    "prompt": 4338476,
+    "completion": 76011,
+    "cache_read": 4142951,
+    "cache_creation": 193031,
+    "total": 4414487,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:48:53"
+  },
+  {
+   "answer": "plan-send-notes__opus-high__r1",
+   "task": "plan-send-notes",
+   "setting": "opus-high",
+   "rep": 1,
+   "cost_usd": 2.7971160999999998,
+   "wall_s": 641,
+   "latency_s": 639,
+   "tokens": {
+    "prompt": 2193842,
+    "completion": 56939,
+    "cache_read": 2034841,
+    "cache_creation": 156414,
+    "total": 2250781,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:52:21"
+  },
+  {
+   "answer": "plan-send-notes__fable-low__r1",
+   "task": "plan-send-notes",
+   "setting": "fable-low",
+   "rep": 1,
+   "cost_usd": 4.866573649999999,
+   "wall_s": 596,
+   "latency_s": 594,
+   "tokens": {
+    "prompt": 845813,
+    "completion": 36399,
+    "cache_read": 699511,
+    "cache_creation": 143505,
+    "total": 882212,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:53:07"
+  },
+  {
+   "answer": "plan-seenby-eval__sonnet-xhigh__r1",
+   "task": "plan-seenby-eval",
+   "setting": "sonnet-xhigh",
+   "rep": 1,
+   "cost_usd": 2.8389662999999996,
+   "wall_s": 980,
+   "latency_s": 978,
+   "tokens": {
+    "prompt": 5912858,
+    "completion": 125533,
+    "cache_read": 5655497,
+    "cache_creation": 254861,
+    "total": 6038391,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:56:21"
+  },
+  {
+   "answer": "plan-stock-hide__sonnet-medium__r1",
+   "task": "plan-stock-hide",
+   "setting": "sonnet-medium",
+   "rep": 1,
+   "cost_usd": 0.7453033,
+   "wall_s": 232,
+   "latency_s": 230,
+   "tokens": {
+    "prompt": 1593173,
+    "completion": 25898,
+    "cache_read": 1506816,
+    "cache_creation": 83874,
+    "total": 1619071,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:56:59"
+  },
+  {
+   "answer": "plan-stock-hide__fable-low__r1",
+   "task": "plan-stock-hide",
+   "setting": "fable-low",
+   "rep": 1,
+   "cost_usd": 3.1014847000000003,
+   "wall_s": 493,
+   "latency_s": 492,
+   "tokens": {
+    "prompt": 840040,
+    "completion": 24930,
+    "cache_read": 753998,
+    "cache_creation": 83133,
+    "total": 864970,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:57:06"
+  },
+  {
+   "answer": "plan-seenby-eval__opus-xhigh__r1",
+   "task": "plan-seenby-eval",
+   "setting": "opus-xhigh",
+   "rep": 1,
+   "cost_usd": 6.229806400000001,
+   "wall_s": 1377,
+   "latency_s": 1375,
+   "tokens": {
+    "prompt": 5292284,
+    "completion": 136327,
+    "cache_read": 4976304,
+    "cache_creation": 313494,
+    "total": 5428611,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:57:36"
+  },
+  {
+   "answer": "recall-glossary__opus-high__r1",
+   "task": "recall-glossary",
+   "setting": "opus-high",
+   "rep": 1,
+   "cost_usd": 0.20755869999999998,
+   "wall_s": 53,
+   "latency_s": 51,
+   "tokens": {
+    "prompt": 34020,
+    "completion": 4998,
+    "cache_read": 19307,
+    "cache_creation": 12989,
+    "total": 39018,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:57:52"
+  },
+  {
+   "answer": "plan-send-notes__fable-high__r1",
+   "task": "plan-send-notes",
+   "setting": "fable-high",
+   "rep": 1,
+   "cost_usd": 7.3531209,
+   "wall_s": 822,
+   "latency_s": 820,
+   "tokens": {
+    "prompt": 1039288,
+    "completion": 59360,
+    "cache_read": 827118,
+    "cache_creation": 209341,
+    "total": 1098648,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:57:59"
+  },
+  {
+   "answer": "recall-glossary__fable-low__r1",
+   "task": "recall-glossary",
+   "setting": "fable-low",
+   "rep": 1,
+   "cost_usd": 0.42245479999999996,
+   "wall_s": 40,
+   "latency_s": 38,
+   "tokens": {
+    "prompt": 29733,
+    "completion": 2627,
+    "cache_read": 13574,
+    "cache_creation": 14407,
+    "total": 32360,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:58:16"
+  },
+  {
+   "answer": "recall-glossary__sonnet-medium__r1",
+   "task": "recall-glossary",
+   "setting": "sonnet-medium",
+   "rep": 1,
+   "cost_usd": 0.11387620000000001,
+   "wall_s": 35,
+   "latency_s": 33,
+   "tokens": {
+    "prompt": 55871,
+    "completion": 4217,
+    "cache_read": 37149,
+    "cache_creation": 16996,
+    "total": 60088,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:58:34"
+  },
+  {
+   "answer": "recall-glossary__opus-xhigh__r1",
+   "task": "recall-glossary",
+   "setting": "opus-xhigh",
+   "rep": 1,
+   "cost_usd": 0.30460909999999997,
+   "wall_s": 91,
+   "latency_s": 90,
+   "tokens": {
+    "prompt": 34505,
+    "completion": 9786,
+    "cache_read": 19639,
+    "cache_creation": 13142,
+    "total": 44291,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:58:37"
+  },
+  {
+   "answer": "plan-stock-hide__opus-high__r1",
+   "task": "plan-stock-hide",
+   "setting": "opus-high",
+   "rep": 1,
+   "cost_usd": 2.2456734999999997,
+   "wall_s": 682,
+   "latency_s": 680,
+   "tokens": {
+    "prompt": 2466440,
+    "completion": 41836,
+    "cache_read": 2345769,
+    "cache_creation": 118176,
+    "total": 2508276,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:58:49"
+  },
+  {
+   "answer": "recall-glossary__fable-high__r1",
+   "task": "recall-glossary",
+   "setting": "fable-high",
+   "rep": 1,
+   "cost_usd": 0.5164257999999999,
+   "wall_s": 78,
+   "latency_s": 76,
+   "tokens": {
+    "prompt": 29758,
+    "completion": 4498,
+    "cache_read": 13578,
+    "cache_creation": 14428,
+    "total": 34256,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:59:09"
+  },
+  {
+   "answer": "recall-glossary__sonnet-xhigh__r1",
+   "task": "recall-glossary",
+   "setting": "sonnet-xhigh",
+   "rep": 1,
+   "cost_usd": 0.14308890000000002,
+   "wall_s": 62,
+   "latency_s": 60,
+   "tokens": {
+    "prompt": 47422,
+    "completion": 8789,
+    "cache_read": 32716,
+    "cache_creation": 12980,
+    "total": 56211,
+    "requests": 1
+   },
+   "finished": "2026-10-17T23:59:18"
+  },
+  {
+   "answer": "plan-send-notes__sonnet-xhigh__r1",
+   "task": "plan-send-notes",
+   "setting": "sonnet-xhigh",
+   "rep": 1,
+   "cost_usd": 2.3693536,
+   "wall_s": 868,
+   "latency_s": 866,
+   "tokens": {
+    "prompt": 3638302,
+    "completion": 110913,
+    "cache_read": 3405347,
+    "cache_creation": 230356,
+    "total": 3749215,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:00:03"
+  },
+  {
+   "answer": "plan-send-notes__opus-xhigh__r1",
+   "task": "plan-send-notes",
+   "setting": "opus-xhigh",
+   "rep": 1,
+   "cost_usd": 4.4560811000000005,
+   "wall_s": 1082,
+   "latency_s": 1080,
+   "tokens": {
+    "prompt": 3578675,
+    "completion": 103630,
+    "cache_read": 3362206,
+    "cache_creation": 213864,
+    "total": 3682305,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:00:42"
+  },
+  {
+   "answer": "recall-specguard__sonnet-medium__r1",
+   "task": "recall-specguard",
+   "setting": "sonnet-medium",
+   "rep": 1,
+   "cost_usd": 0.2593572,
+   "wall_s": 87,
+   "latency_s": 85,
+   "tokens": {
+    "prompt": 244441,
+    "completion": 10624,
+    "cache_read": 209532,
+    "cache_creation": 33035,
+    "total": 255065,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:00:45"
+  },
+  {
+   "answer": "recall-specguard__fable-low__r1",
+   "task": "recall-specguard",
+   "setting": "fable-low",
+   "rep": 1,
+   "cost_usd": 3.3206682499999998,
+   "wall_s": 138,
+   "latency_s": 136,
+   "tokens": {
+    "prompt": 538720,
+    "completion": 9868,
+    "cache_read": 400369,
+    "cache_creation": 136307,
+    "total": 548588,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:01:07"
+  },
+  {
+   "answer": "plan-stock-hide__fable-high__r1",
+   "task": "plan-stock-hide",
+   "setting": "fable-high",
+   "rep": 1,
+   "cost_usd": 4.3897062,
+   "wall_s": 531,
+   "latency_s": 529,
+   "tokens": {
+    "prompt": 597232,
+    "completion": 37188,
+    "cache_read": 473416,
+    "cache_creation": 121163,
+    "total": 634420,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:01:12"
+  },
+  {
+   "answer": "recall-specguard__opus-high__r1",
+   "task": "recall-specguard",
+   "setting": "opus-high",
+   "rep": 1,
+   "cost_usd": 0.9095791999999999,
+   "wall_s": 181,
+   "latency_s": 180,
+   "tokens": {
+    "prompt": 441798,
+    "completion": 15142,
+    "cache_read": 373386,
+    "cache_creation": 66534,
+    "total": 456940,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:01:36"
+  },
+  {
+   "answer": "recall-specguard__fable-high__r1",
+   "task": "recall-specguard",
+   "setting": "fable-high",
+   "rep": 1,
+   "cost_usd": 3.63026125,
+   "wall_s": 177,
+   "latency_s": 175,
+   "tokens": {
+    "prompt": 968077,
+    "completion": 13380,
+    "cache_read": 828253,
+    "cache_creation": 137556,
+    "total": 981457,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:02:06"
+  },
+  {
+   "answer": "plan-stock-hide__opus-xhigh__r1",
+   "task": "plan-stock-hide",
+   "setting": "opus-xhigh",
+   "rep": 1,
+   "cost_usd": 3.756221,
+   "wall_s": 862,
+   "latency_s": 860,
+   "tokens": {
+    "prompt": 4360227,
+    "completion": 79338,
+    "cache_read": 4190614,
+    "cache_creation": 167104,
+    "total": 4439565,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:02:16"
+  },
+  {
+   "answer": "recall-specguard__opus-xhigh__r1",
+   "task": "recall-specguard",
+   "setting": "opus-xhigh",
+   "rep": 1,
+   "cost_usd": 1.3511395999999998,
+   "wall_s": 299,
+   "latency_s": 297,
+   "tokens": {
+    "prompt": 934643,
+    "completion": 28222,
+    "cache_read": 855798,
+    "cache_creation": 76951,
+    "total": 962865,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:03:36"
+  },
+  {
+   "answer": "turn-floating-ui__opus-high__r1",
+   "task": "turn-floating-ui",
+   "setting": "opus-high",
+   "rep": 1,
+   "cost_usd": 0.7013929,
+   "wall_s": 112,
+   "latency_s": 110,
+   "tokens": {
+    "prompt": 525899,
+    "completion": 8688,
+    "cache_read": 470055,
+    "cache_creation": 54218,
+    "total": 534587,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:04:08"
+  },
+  {
+   "answer": "sm-recall__opus-high__r1",
+   "task": "sm-recall",
+   "setting": "opus-high",
+   "rep": 1,
+   "cost_usd": 2.3036926,
+   "wall_s": 270,
+   "latency_s": 268,
+   "tokens": {
+    "prompt": 2375684,
+    "completion": 24582,
+    "cache_read": 2201805,
+    "cache_creation": 171458,
+    "total": 2400266,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:05:11"
+  },
+  {
+   "answer": "recall-specguard__sonnet-xhigh__r1",
+   "task": "recall-specguard",
+   "setting": "sonnet-xhigh",
+   "rep": 1,
+   "cost_usd": 1.0609567999999998,
+   "wall_s": 312,
+   "latency_s": 311,
+   "tokens": {
+    "prompt": 1478810,
+    "completion": 42622,
+    "cache_read": 1352048,
+    "cache_creation": 124866,
+    "total": 1521432,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:05:16"
+  },
+  {
+   "answer": "turn-floating-ui__sonnet-medium__r1",
+   "task": "turn-floating-ui",
+   "setting": "sonnet-medium",
+   "rep": 1,
+   "cost_usd": 0.21112329999999999,
+   "wall_s": 33,
+   "latency_s": 31,
+   "tokens": {
+    "prompt": 299436,
+    "completion": 2795,
+    "cache_read": 257694,
+    "cache_creation": 40132,
+    "total": 302231,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:05:49"
+  },
+  {
+   "answer": "sm-recall__sonnet-medium__r1",
+   "task": "sm-recall",
+   "setting": "sonnet-medium",
+   "rep": 1,
+   "cost_usd": 1.0529488999999996,
+   "wall_s": 265,
+   "latency_s": 263,
+   "tokens": {
+    "prompt": 2793535,
+    "completion": 29141,
+    "cache_read": 2667438,
+    "cache_creation": 123648,
+    "total": 2822676,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:06:01"
+  },
+  {
+   "answer": "turn-floating-ui__fable-low__r1",
+   "task": "turn-floating-ui",
+   "setting": "fable-low",
+   "rep": 1,
+   "cost_usd": 1.6094826500000001,
+   "wall_s": 113,
+   "latency_s": 111,
+   "tokens": {
+    "prompt": 625059,
+    "completion": 3521,
+    "cache_read": 558573,
+    "cache_creation": 64570,
+    "total": 628580,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:06:01"
+  },
+  {
+   "answer": "turn-hono-rpc__opus-high__r1",
+   "task": "turn-hono-rpc",
+   "setting": "opus-high",
+   "rep": 1,
+   "cost_usd": 0.7704905000000001,
+   "wall_s": 95,
+   "latency_s": 93,
+   "tokens": {
+    "prompt": 698523,
+    "completion": 7005,
+    "cache_read": 633198,
+    "cache_creation": 63722,
+    "total": 705528,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:07:35"
+  },
+  {
+   "answer": "turn-floating-ui__fable-high__r1",
+   "task": "turn-floating-ui",
+   "setting": "fable-high",
+   "rep": 1,
+   "cost_usd": 2.8100394,
+   "wall_s": 158,
+   "latency_s": 156,
+   "tokens": {
+    "prompt": 707450,
+    "completion": 8936,
+    "cache_read": 594958,
+    "cache_creation": 110640,
+    "total": 716386,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:07:49"
+  },
+  {
+   "answer": "sm-recall__fable-low__r1",
+   "task": "sm-recall",
+   "setting": "fable-low",
+   "rep": 1,
+   "cost_usd": 5.1056123499999995,
+   "wall_s": 402,
+   "latency_s": 401,
+   "tokens": {
+    "prompt": 1537082,
+    "completion": 20457,
+    "cache_read": 1347101,
+    "cache_creation": 187064,
+    "total": 1557539,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:07:49"
+  },
+  {
+   "answer": "turn-hono-rpc__sonnet-medium__r1",
+   "task": "turn-hono-rpc",
+   "setting": "sonnet-medium",
+   "rep": 1,
+   "cost_usd": 0.091714,
+   "wall_s": 29,
+   "latency_s": 27,
+   "tokens": {
+    "prompt": 80754,
+    "completion": 2624,
+    "cache_read": 63521,
+    "cache_creation": 15652,
+    "total": 83378,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:08:19"
+  },
+  {
+   "answer": "sm-recall__fable-high__r1",
+   "task": "sm-recall",
+   "setting": "fable-high",
+   "rep": 1,
+   "cost_usd": 5.12105935,
+   "wall_s": 439,
+   "latency_s": 438,
+   "tokens": {
+    "prompt": 1200233,
+    "completion": 23884,
+    "cache_read": 1013923,
+    "cache_creation": 183489,
+    "total": 1224117,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:08:31"
+  },
+  {
+   "answer": "turn-hono-rpc__fable-low__r1",
+   "task": "turn-hono-rpc",
+   "setting": "fable-low",
+   "rep": 1,
+   "cost_usd": 1.4405479,
+   "wall_s": 86,
+   "latency_s": 85,
+   "tokens": {
+    "prompt": 269588,
+    "completion": 4342,
+    "cache_read": 208664,
+    "cache_creation": 59193,
+    "total": 273930,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:09:02"
+  },
+  {
+   "answer": "turn-hono-rpc__opus-xhigh__r1",
+   "task": "turn-hono-rpc",
+   "setting": "opus-xhigh",
+   "rep": 1,
+   "cost_usd": 2.0146133000000006,
+   "wall_s": 208,
+   "latency_s": 206,
+   "tokens": {
+    "prompt": 2827498,
+    "completion": 15330,
+    "cache_read": 2679337,
+    "cache_creation": 146532,
+    "total": 2842828,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:09:29"
+  },
+  {
+   "answer": "turn-hono-rpc__fable-high__r1",
+   "task": "turn-hono-rpc",
+   "setting": "fable-high",
+   "rep": 1,
+   "cost_usd": 1.9057794,
+   "wall_s": 114,
+   "latency_s": 113,
+   "tokens": {
+    "prompt": 404731,
+    "completion": 9381,
+    "cache_read": 334012,
+    "cache_creation": 68924,
+    "total": 414112,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:09:43"
+  },
+  {
+   "answer": "sm-recall__opus-xhigh__r1",
+   "task": "sm-recall",
+   "setting": "opus-xhigh",
+   "rep": 1,
+   "cost_usd": 3.8481357000000003,
+   "wall_s": 544,
+   "latency_s": 542,
+   "tokens": {
+    "prompt": 3893886,
+    "completion": 52559,
+    "cache_read": 3632658,
+    "cache_creation": 258797,
+    "total": 3946445,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:09:48"
+  },
+  {
+   "answer": "plan-stock-hide__sonnet-xhigh__r1",
+   "task": "plan-stock-hide",
+   "setting": "sonnet-xhigh",
+   "rep": 1,
+   "cost_usd": 2.6329185000000006,
+   "wall_s": 836,
+   "latency_s": 835,
+   "tokens": {
+    "prompt": 7537558,
+    "completion": 104216,
+    "cache_read": 7320388,
+    "cache_creation": 214619,
+    "total": 7641774,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:10:17"
+  },
+  {
+   "answer": "turn-pinpoint__opus-high__r1",
+   "task": "turn-pinpoint",
+   "setting": "opus-high",
+   "rep": 1,
+   "cost_usd": 1.0748968,
+   "wall_s": 120,
+   "latency_s": 118,
+   "tokens": {
+    "prompt": 934581,
+    "completion": 9907,
+    "cache_read": 843763,
+    "cache_creation": 89188,
+    "total": 944488,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:10:31"
+  },
+  {
+   "answer": "turn-hono-rpc__sonnet-xhigh__r1",
+   "task": "turn-hono-rpc",
+   "setting": "sonnet-xhigh",
+   "rep": 1,
+   "cost_usd": 0.5409087,
+   "wall_s": 133,
+   "latency_s": 131,
+   "tokens": {
+    "prompt": 889561,
+    "completion": 15943,
+    "cache_read": 812238,
+    "cache_creation": 75720,
+    "total": 905504,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:10:32"
+  },
+  {
+   "answer": "turn-floating-ui__sonnet-xhigh__r1",
+   "task": "turn-floating-ui",
+   "setting": "sonnet-xhigh",
+   "rep": 1,
+   "cost_usd": 1.1696428999999997,
+   "wall_s": 294,
+   "latency_s": 292,
+   "tokens": {
+    "prompt": 2604957,
+    "completion": 36135,
+    "cache_read": 2462815,
+    "cache_creation": 140492,
+    "total": 2641092,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:10:43"
+  },
+  {
+   "answer": "turn-pinpoint__sonnet-medium__r1",
+   "task": "turn-pinpoint",
+   "setting": "sonnet-medium",
+   "rep": 1,
+   "cost_usd": 0.3884256,
+   "wall_s": 92,
+   "latency_s": 90,
+   "tokens": {
+    "prompt": 474490,
+    "completion": 10120,
+    "cache_read": 410749,
+    "cache_creation": 62115,
+    "total": 484610,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:11:20"
+  },
+  {
+   "answer": "turn-floating-ui__opus-xhigh__r1",
+   "task": "turn-floating-ui",
+   "setting": "opus-xhigh",
+   "rep": 1,
+   "cost_usd": 2.8445139000000004,
+   "wall_s": 479,
+   "latency_s": 477,
+   "tokens": {
+    "prompt": 4241065,
+    "completion": 40122,
+    "cache_read": 4086285,
+    "cache_creation": 153110,
+    "total": 4281187,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:11:36"
+  },
+  {
+   "answer": "turn-pinpoint__fable-low__r1",
+   "task": "turn-pinpoint",
+   "setting": "fable-low",
+   "rep": 1,
+   "cost_usd": 2.8078827,
+   "wall_s": 143,
+   "latency_s": 141,
+   "tokens": {
+    "prompt": 506396,
+    "completion": 8138,
+    "cache_read": 388758,
+    "cache_creation": 115842,
+    "total": 514534,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:11:52"
+  },
+  {
+   "answer": "turn-review-exports__sonnet-medium__r1",
+   "task": "turn-review-exports",
+   "setting": "sonnet-medium",
+   "rep": 1,
+   "cost_usd": 0.07882,
+   "wall_s": 19,
+   "latency_s": 17,
+   "tokens": {
+    "prompt": 50403,
+    "completion": 1640,
+    "cache_read": 34099,
+    "cache_creation": 14760,
+    "total": 52043,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:11:55"
+  },
+  {
+   "answer": "turn-review-exports__opus-high__r1",
+   "task": "turn-review-exports",
+   "setting": "opus-high",
+   "rep": 1,
+   "cost_usd": 0.6819538999999999,
+   "wall_s": 93,
+   "latency_s": 91,
+   "tokens": {
+    "prompt": 493622,
+    "completion": 7122,
+    "cache_read": 435489,
+    "cache_creation": 56571,
+    "total": 500744,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:12:04"
+  },
+  {
+   "answer": "turn-review-exports__fable-low__r1",
+   "task": "turn-review-exports",
+   "setting": "fable-low",
+   "rep": 1,
+   "cost_usd": 1.1027498500000001,
+   "wall_s": 83,
+   "latency_s": 81,
+   "tokens": {
+    "prompt": 172780,
+    "completion": 3551,
+    "cache_read": 126423,
+    "cache_creation": 44627,
+    "total": 176331,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:12:06"
+  },
+  {
+   "answer": "sm-recall__sonnet-xhigh__r1",
+   "task": "sm-recall",
+   "setting": "sonnet-xhigh",
+   "rep": 1,
+   "cost_usd": 2.2563951,
+   "wall_s": 628,
+   "latency_s": 626,
+   "tokens": {
+    "prompt": 3662408,
+    "completion": 82087,
+    "cache_read": 3385780,
+    "cache_creation": 274193,
+    "total": 3744495,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:12:33"
+  },
+  {
+   "answer": "turn-review-exports__fable-high__r1",
+   "task": "turn-review-exports",
+   "setting": "fable-high",
+   "rep": 1,
+   "cost_usd": 2.0171856,
+   "wall_s": 84,
+   "latency_s": 82,
+   "tokens": {
+    "prompt": 343009,
+    "completion": 4848,
+    "cache_read": 255806,
+    "cache_creation": 85505,
+    "total": 347857,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:12:44"
+  },
+  {
+   "answer": "turn-pinpoint__fable-high__r1",
+   "task": "turn-pinpoint",
+   "setting": "fable-high",
+   "rep": 1,
+   "cost_usd": 3.1766492,
+   "wall_s": 187,
+   "latency_s": 186,
+   "tokens": {
+    "prompt": 672465,
+    "completion": 13222,
+    "cache_read": 550938,
+    "cache_creation": 119667,
+    "total": 685687,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:12:51"
+  },
+  {
+   "answer": "turn-review-exports__opus-xhigh__r1",
+   "task": "turn-review-exports",
+   "setting": "opus-xhigh",
+   "rep": 1,
+   "cost_usd": 1.4287359,
+   "wall_s": 152,
+   "latency_s": 150,
+   "tokens": {
+    "prompt": 1511534,
+    "completion": 13458,
+    "cache_read": 1399999,
+    "cache_creation": 109959,
+    "total": 1524992,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:13:04"
+  },
+  {
+   "answer": "turn-review-exports__sonnet-xhigh__r1",
+   "task": "turn-review-exports",
+   "setting": "sonnet-xhigh",
+   "rep": 1,
+   "cost_usd": 0.5934480000000001,
+   "wall_s": 96,
+   "latency_s": 94,
+   "tokens": {
+    "prompt": 1021103,
+    "completion": 10726,
+    "cache_read": 921019,
+    "cache_creation": 98518,
+    "total": 1031829,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:13:28"
+  },
+  {
+   "answer": "turn-pinpoint__opus-xhigh__r1",
+   "task": "turn-pinpoint",
+   "setting": "opus-xhigh",
+   "rep": 1,
+   "cost_usd": 2.0774928,
+   "wall_s": 328,
+   "latency_s": 326,
+   "tokens": {
+    "prompt": 2348453,
+    "completion": 27865,
+    "cache_read": 2211568,
+    "cache_creation": 135229,
+    "total": 2376318,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:14:29"
+  },
+  {
+   "answer": "turn-pinpoint__sonnet-xhigh__r1",
+   "task": "turn-pinpoint",
+   "setting": "sonnet-xhigh",
+   "rep": 1,
+   "cost_usd": 1.0055433999999999,
+   "wall_s": 266,
+   "latency_s": 265,
+   "tokens": {
+    "prompt": 1774130,
+    "completion": 32074,
+    "cache_read": 1641677,
+    "cache_creation": 130807,
+    "total": 1806204,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:14:44"
+  },
+  {
+   "answer": "cr-desk-nav__opus-high__r2",
+   "task": "cr-desk-nav",
+   "setting": "opus-high",
+   "rep": 2,
+   "cost_usd": 0.9693328000000001,
+   "wall_s": 227,
+   "latency_s": 225,
+   "tokens": {
+    "prompt": 526365,
+    "completion": 19322,
+    "cache_read": 462285,
+    "cache_creation": 62076,
+    "total": 545687,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:15:42"
+  },
+  {
+   "answer": "cr-desk-nav__fable-low__r2",
+   "task": "cr-desk-nav",
+   "setting": "fable-low",
+   "rep": 2,
+   "cost_usd": 1.99262755,
+   "wall_s": 227,
+   "latency_s": 225,
+   "tokens": {
+    "prompt": 390449,
+    "completion": 14834,
+    "cache_read": 329877,
+    "cache_creation": 58336,
+    "total": 405283,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:15:53"
+  },
+  {
+   "answer": "cr-desk-nav__sonnet-medium__r2",
+   "task": "cr-desk-nav",
+   "setting": "sonnet-medium",
+   "rep": 2,
+   "cost_usd": 0.1924041,
+   "wall_s": 321,
+   "latency_s": 320,
+   "tokens": {
+    "prompt": 173198,
+    "completion": 6626,
+    "cache_read": 143258,
+    "cache_creation": 27948,
+    "total": 179824,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:18:05"
+  },
+  {
+   "answer": "cr-desk-nav__fable-high__r2",
+   "task": "cr-desk-nav",
+   "setting": "fable-high",
+   "rep": 2,
+   "cost_usd": 3.5403057999999996,
+   "wall_s": 428,
+   "latency_s": 426,
+   "tokens": {
+    "prompt": 793198,
+    "completion": 30933,
+    "cache_read": 699480,
+    "cache_creation": 91386,
+    "total": 824131,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:19:41"
+  },
+  {
+   "answer": "cr-desk-push__sonnet-medium__r2",
+   "task": "cr-desk-push",
+   "setting": "sonnet-medium",
+   "rep": 2,
+   "cost_usd": 0.6500405,
+   "wall_s": 276,
+   "latency_s": 274,
+   "tokens": {
+    "prompt": 693669,
+    "completion": 31787,
+    "cache_read": 624110,
+    "cache_creation": 67425,
+    "total": 725456,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:20:18"
+  },
+  {
+   "answer": "cr-desk-nav__sonnet-xhigh__r2",
+   "task": "cr-desk-nav",
+   "setting": "sonnet-xhigh",
+   "rep": 2,
+   "cost_usd": 1.162018,
+   "wall_s": 456,
+   "latency_s": 455,
+   "tokens": {
+    "prompt": 1505630,
+    "completion": 57221,
+    "cache_read": 1390247,
+    "cache_creation": 113365,
+    "total": 1562851,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:20:27"
+  },
+  {
+   "answer": "cr-eval-align-1__opus-high__r2",
+   "task": "cr-eval-align-1",
+   "setting": "opus-high",
+   "rep": 2,
+   "cost_usd": 1.2242841000000002,
+   "wall_s": 220,
+   "latency_s": 219,
+   "tokens": {
+    "prompt": 982077,
+    "completion": 21215,
+    "cache_read": 901485,
+    "cache_creation": 78455,
+    "total": 1003292,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:21:46"
+  },
+  {
+   "answer": "cr-desk-push__opus-high__r2",
+   "task": "cr-desk-push",
+   "setting": "opus-high",
+   "rep": 2,
+   "cost_usd": 1.7961172000000003,
+   "wall_s": 528,
+   "latency_s": 527,
+   "tokens": {
+    "prompt": 1412823,
+    "completion": 40056,
+    "cache_read": 1319271,
+    "cache_creation": 91408,
+    "total": 1452879,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:21:52"
+  },
+  {
+   "answer": "cr-desk-push__fable-low__r2",
+   "task": "cr-desk-push",
+   "setting": "fable-low",
+   "rep": 2,
+   "cost_usd": 3.96673975,
+   "wall_s": 488,
+   "latency_s": 486,
+   "tokens": {
+    "prompt": 1074692,
+    "completion": 33623,
+    "cache_read": 969371,
+    "cache_creation": 102835,
+    "total": 1108315,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:22:37"
+  },
+  {
+   "answer": "cr-eval-align-1__sonnet-medium__r2",
+   "task": "cr-eval-align-1",
+   "setting": "sonnet-medium",
+   "rep": 2,
+   "cost_usd": 0.2715648,
+   "wall_s": 63,
+   "latency_s": 62,
+   "tokens": {
+    "prompt": 297883,
+    "completion": 7647,
+    "cache_read": 252417,
+    "cache_creation": 43347,
+    "total": 305530,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:22:49"
+  },
+  {
+   "answer": "cr-eval-align-1__fable-low__r2",
+   "task": "cr-eval-align-1",
+   "setting": "fable-low",
+   "rep": 2,
+   "cost_usd": 2.733445099999999,
+   "wall_s": 211,
+   "latency_s": 209,
+   "tokens": {
+    "prompt": 899433,
+    "completion": 15440,
+    "cache_read": 809132,
+    "cache_creation": 87814,
+    "total": 914873,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:23:48"
+  },
+  {
+   "answer": "cr-desk-nav__opus-xhigh__r2",
+   "task": "cr-desk-nav",
+   "setting": "opus-xhigh",
+   "rep": 2,
+   "cost_usd": 3.0717961000000007,
+   "wall_s": 741,
+   "latency_s": 739,
+   "tokens": {
+    "prompt": 2966314,
+    "completion": 66687,
+    "cache_read": 2816624,
+    "cache_creation": 147652,
+    "total": 3033001,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:24:25"
+  },
+  {
+   "answer": "cr-desk-push__fable-high__r2",
+   "task": "cr-desk-push",
+   "setting": "fable-high",
+   "rep": 2,
+   "cost_usd": 5.196561,
+   "wall_s": 714,
+   "latency_s": 713,
+   "tokens": {
+    "prompt": 1046734,
+    "completion": 48081,
+    "cache_read": 916238,
+    "cache_creation": 128042,
+    "total": 1094815,
+    "requests": 1
+   },
+   "finished": "2026-10-18T00:26:38"
+  },
+  {
+   "answer": "cr-seenby-crops__sonnet-medium__r2",
+   "task": "cr-seenby-crops",
+   "setting": "sonnet-medium",
+   "rep": 2,
+   "cost_usd": 0.4937529,
+   "wall_s": 172,
+   "latency_s": 169,
+   "tokens": {
+    "prompt": 623214,
+    "completion": 18903,
+    "cache_read": 558918,
+    "cache_creation": 62201,
+    "total": 642117,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:25:14"
+  },
+  {
+   "answer": "cr-eval-align-1__fable-high__r2",
+   "task": "cr-eval-align-1",
+   "setting": "fable-high",
+   "rep": 2,
+   "cost_usd": 3.7135865999999997,
+   "wall_s": 354,
+   "latency_s": 351,
+   "tokens": {
+    "prompt": 849930,
+    "completion": 26141,
+    "cache_read": 736496,
+    "cache_creation": 111011,
+    "total": 876071,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:28:16"
+  },
+  {
+   "answer": "cr-eval-align-1__sonnet-xhigh__r2",
+   "task": "cr-eval-align-1",
+   "setting": "sonnet-xhigh",
+   "rep": 2,
+   "cost_usd": 1.2477625,
+   "wall_s": 413,
+   "latency_s": 410,
+   "tokens": {
+    "prompt": 2756386,
+    "completion": 50245,
+    "cache_read": 2633759,
+    "cache_creation": 120456,
+    "total": 2806631,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:29:15"
+  },
+  {
+   "answer": "cr-seenby-crops__fable-low__r2",
+   "task": "cr-seenby-crops",
+   "setting": "fable-low",
+   "rep": 2,
+   "cost_usd": 3.4331126000000003,
+   "wall_s": 483,
+   "latency_s": 480,
+   "tokens": {
+    "prompt": 518340,
+    "completion": 27926,
+    "cache_read": 419494,
+    "cache_creation": 96517,
+    "total": 546266,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:30:25"
+  },
+  {
+   "answer": "fc-fullscreen__opus-high__r2",
+   "task": "fc-fullscreen",
+   "setting": "opus-high",
+   "rep": 2,
+   "cost_usd": 1.5750195999999999,
+   "wall_s": 189,
+   "latency_s": 187,
+   "tokens": {
+    "prompt": 2245201,
+    "completion": 13082,
+    "cache_read": 2132557,
+    "cache_creation": 110869,
+    "total": 2258283,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:31:25"
+  },
+  {
+   "answer": "cr-seenby-crops__opus-high__r2",
+   "task": "cr-seenby-crops",
+   "setting": "opus-high",
+   "rep": 2,
+   "cost_usd": 2.0409701,
+   "wall_s": 546,
+   "latency_s": 543,
+   "tokens": {
+    "prompt": 1814891,
+    "completion": 40775,
+    "cache_read": 1702135,
+    "cache_creation": 110641,
+    "total": 1855666,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:31:28"
+  },
+  {
+   "answer": "cr-eval-align-1__opus-xhigh__r2",
+   "task": "cr-eval-align-1",
+   "setting": "opus-xhigh",
+   "rep": 2,
+   "cost_usd": 2.7897805000000004,
+   "wall_s": 627,
+   "latency_s": 624,
+   "tokens": {
+    "prompt": 2656374,
+    "completion": 58425,
+    "cache_read": 2514412,
+    "cache_creation": 139803,
+    "total": 2714799,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:32:50"
+  },
+  {
+   "answer": "fc-fullscreen__sonnet-medium__r2",
+   "task": "fc-fullscreen",
+   "setting": "sonnet-medium",
+   "rep": 2,
+   "cost_usd": 0.4469922,
+   "wall_s": 91,
+   "latency_s": 89,
+   "tokens": {
+    "prompt": 843262,
+    "completion": 9932,
+    "cache_read": 773940,
+    "cache_creation": 67567,
+    "total": 853194,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:32:59"
+  },
+  {
+   "answer": "fc-fullscreen__fable-low__r2",
+   "task": "fc-fullscreen",
+   "setting": "fable-low",
+   "rep": 2,
+   "cost_usd": 3.8934752,
+   "wall_s": 220,
+   "latency_s": 218,
+   "tokens": {
+    "prompt": 1237262,
+    "completion": 12917,
+    "cache_read": 1085506,
+    "cache_creation": 149717,
+    "total": 1250179,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:34:06"
+  },
+  {
+   "answer": "fc-hud__opus-high__r2",
+   "task": "fc-hud",
+   "setting": "opus-high",
+   "rep": 2,
+   "cost_usd": 0.7838669,
+   "wall_s": 125,
+   "latency_s": 123,
+   "tokens": {
+    "prompt": 773425,
+    "completion": 9782,
+    "cache_read": 715392,
+    "cache_creation": 56301,
+    "total": 783207,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:35:03"
+  },
+  {
+   "answer": "fc-fullscreen__opus-xhigh__r2",
+   "task": "fc-fullscreen",
+   "setting": "opus-xhigh",
+   "rep": 2,
+   "cost_usd": 2.9881279999999997,
+   "wall_s": 361,
+   "latency_s": 359,
+   "tokens": {
+    "prompt": 5065105,
+    "completion": 25895,
+    "cache_read": 4876439,
+    "cache_creation": 186865,
+    "total": 5091000,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:35:16"
+  },
+  {
+   "answer": "cr-seenby-crops__fable-high__r2",
+   "task": "cr-seenby-crops",
+   "setting": "fable-high",
+   "rep": 2,
+   "cost_usd": 5.6887876,
+   "wall_s": 819,
+   "latency_s": 816,
+   "tokens": {
+    "prompt": 1445613,
+    "completion": 53945,
+    "cache_read": 1310032,
+    "cache_creation": 132996,
+    "total": 1499558,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:36:01"
+  },
+  {
+   "answer": "fc-hud__fable-low__r2",
+   "task": "fc-hud",
+   "setting": "fable-low",
+   "rep": 2,
+   "cost_usd": 1.554444,
+   "wall_s": 89,
+   "latency_s": 88,
+   "tokens": {
+    "prompt": 180508,
+    "completion": 7155,
+    "cache_read": 120372,
+    "cache_creation": 58316,
+    "total": 187663,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:36:33"
+  },
+  {
+   "answer": "fc-fullscreen__sonnet-xhigh__r2",
+   "task": "fc-fullscreen",
+   "setting": "sonnet-xhigh",
+   "rep": 2,
+   "cost_usd": 1.1492510999999999,
+   "wall_s": 230,
+   "latency_s": 228,
+   "tokens": {
+    "prompt": 2407277,
+    "completion": 30353,
+    "cache_read": 2250349,
+    "cache_creation": 155165,
+    "total": 2437630,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:36:40"
+  },
+  {
+   "answer": "cr-desk-push__sonnet-xhigh__r2",
+   "task": "cr-desk-push",
+   "setting": "sonnet-xhigh",
+   "rep": 2,
+   "cost_usd": 1.9460989000000002,
+   "wall_s": 864,
+   "latency_s": 861,
+   "tokens": {
+    "prompt": 3054016,
+    "completion": 101796,
+    "cache_read": 2891059,
+    "cache_creation": 160787,
+    "total": 3155812,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:36:46"
+  },
+  {
+   "answer": "fc-fullscreen__fable-high__r2",
+   "task": "fc-fullscreen",
+   "setting": "fable-high",
+   "rep": 2,
+   "cost_usd": 5.593481949999999,
+   "wall_s": 325,
+   "latency_s": 323,
+   "tokens": {
+    "prompt": 1779225,
+    "completion": 24973,
+    "cache_read": 1579751,
+    "cache_creation": 197339,
+    "total": 1804198,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:36:50"
+  },
+  {
+   "answer": "fc-hud__sonnet-medium__r2",
+   "task": "fc-hud",
+   "setting": "sonnet-medium",
+   "rep": 2,
+   "cost_usd": 0.2197619,
+   "wall_s": 52,
+   "latency_s": 51,
+   "tokens": {
+    "prompt": 235360,
+    "completion": 5235,
+    "cache_read": 196709,
+    "cache_creation": 36939,
+    "total": 240595,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:36:53"
+  },
+  {
+   "answer": "cr-seenby-crops__opus-xhigh__r2",
+   "task": "cr-seenby-crops",
+   "setting": "opus-xhigh",
+   "rep": 2,
+   "cost_usd": 4.0664239,
+   "wall_s": 947,
+   "latency_s": 944,
+   "tokens": {
+    "prompt": 5956784,
+    "completion": 78018,
+    "cache_read": 5786024,
+    "cache_creation": 168591,
+    "total": 6034802,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:38:10"
+  },
+  {
+   "answer": "fc-hud__sonnet-xhigh__r2",
+   "task": "fc-hud",
+   "setting": "sonnet-xhigh",
+   "rep": 2,
+   "cost_usd": 0.5842451999999998,
+   "wall_s": 132,
+   "latency_s": 130,
+   "tokens": {
+    "prompt": 1162927,
+    "completion": 15325,
+    "cache_read": 1080462,
+    "cache_creation": 80729,
+    "total": 1178252,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:38:44"
+  },
+  {
+   "answer": "fc-hud__opus-xhigh__r2",
+   "task": "fc-hud",
+   "setting": "opus-xhigh",
+   "rep": 2,
+   "cost_usd": 1.4377426,
+   "wall_s": 284,
+   "latency_s": 283,
+   "tokens": {
+    "prompt": 1708776,
+    "completion": 19955,
+    "cache_read": 1617628,
+    "cache_creation": 89396,
+    "total": 1728731,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:38:50"
+  },
+  {
+   "answer": "fc-hud__fable-high__r2",
+   "task": "fc-hud",
+   "setting": "fable-high",
+   "rep": 2,
+   "cost_usd": 1.87963675,
+   "wall_s": 215,
+   "latency_s": 213,
+   "tokens": {
+    "prompt": 292078,
+    "completion": 12656,
+    "cache_read": 230783,
+    "cache_creation": 59411,
+    "total": 304734,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:38:51"
+  },
+  {
+   "answer": "fc-roamgate__fable-low__r2",
+   "task": "fc-roamgate",
+   "setting": "fable-low",
+   "rep": 2,
+   "cost_usd": 2.13026725,
+   "wall_s": 142,
+   "latency_s": 139,
+   "tokens": {
+    "prompt": 308650,
+    "completion": 12068,
+    "cache_read": 233381,
+    "cache_creation": 73385,
+    "total": 320718,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:39:12"
+  },
+  {
+   "answer": "fc-roamgate__sonnet-medium__r2",
+   "task": "fc-roamgate",
+   "setting": "sonnet-medium",
+   "rep": 2,
+   "cost_usd": 0.33143,
+   "wall_s": 75,
+   "latency_s": 72,
+   "tokens": {
+    "prompt": 479968,
+    "completion": 7915,
+    "cache_read": 425820,
+    "cache_creation": 52430,
+    "total": 487883,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:39:25"
+  },
+  {
+   "answer": "cr-desk-push__opus-xhigh__r2",
+   "task": "cr-desk-push",
+   "setting": "opus-xhigh",
+   "rep": 2,
+   "cost_usd": 3.286520200000001,
+   "wall_s": 1024,
+   "latency_s": 1021,
+   "tokens": {
+    "prompt": 2412017,
+    "completion": 82747,
+    "cache_read": 2262466,
+    "cache_creation": 147395,
+    "total": 2494764,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:39:26"
+  },
+  {
+   "answer": "fc-roamgate__opus-high__r2",
+   "task": "fc-roamgate",
+   "setting": "opus-high",
+   "rep": 2,
+   "cost_usd": 1.1206298,
+   "wall_s": 187,
+   "latency_s": 184,
+   "tokens": {
+    "prompt": 1676464,
+    "completion": 14905,
+    "cache_read": 1612179,
+    "cache_creation": 62513,
+    "total": 1691369,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:39:47"
+  },
+  {
+   "answer": "fc-telegram__sonnet-medium__r2",
+   "task": "fc-telegram",
+   "setting": "sonnet-medium",
+   "rep": 2,
+   "cost_usd": 0.2260497,
+   "wall_s": 48,
+   "latency_s": 47,
+   "tokens": {
+    "prompt": 240630,
+    "completion": 5563,
+    "cache_read": 200484,
+    "cache_creation": 38377,
+    "total": 246193,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:40:15"
+  },
+  {
+   "answer": "intake-merchant-groups__opus-high__r2",
+   "task": "intake-merchant-groups",
+   "setting": "opus-high",
+   "rep": 2,
+   "cost_usd": 0.31382920000000003,
+   "wall_s": 59,
+   "latency_s": 57,
+   "tokens": {
+    "prompt": 111827,
+    "completion": 4390,
+    "cache_read": 83941,
+    "cache_creation": 26189,
+    "total": 116217,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:41:14"
+  },
+  {
+   "answer": "fc-roamgate__fable-high__r2",
+   "task": "fc-roamgate",
+   "setting": "fable-high",
+   "rep": 2,
+   "cost_usd": 3.7451455000000005,
+   "wall_s": 261,
+   "latency_s": 259,
+   "tokens": {
+    "prompt": 784517,
+    "completion": 19597,
+    "cache_read": 652534,
+    "cache_creation": 130035,
+    "total": 804114,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:41:15"
+  },
+  {
+   "answer": "fc-telegram__opus-high__r2",
+   "task": "fc-telegram",
+   "setting": "opus-high",
+   "rep": 2,
+   "cost_usd": 0.8584277000000001,
+   "wall_s": 151,
+   "latency_s": 150,
+   "tokens": {
+    "prompt": 760324,
+    "completion": 11337,
+    "cache_read": 695942,
+    "cache_creation": 62597,
+    "total": 771661,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:41:21"
+  },
+  {
+   "answer": "fc-telegram__fable-low__r2",
+   "task": "fc-telegram",
+   "setting": "fable-low",
+   "rep": 2,
+   "cost_usd": 1.9718902999999999,
+   "wall_s": 157,
+   "latency_s": 156,
+   "tokens": {
+    "prompt": 384952,
+    "completion": 8008,
+    "cache_read": 307346,
+    "cache_creation": 75659,
+    "total": 392960,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:41:49"
+  },
+  {
+   "answer": "intake-merchant-groups__fable-low__r2",
+   "task": "intake-merchant-groups",
+   "setting": "fable-low",
+   "rep": 2,
+   "cost_usd": 0.53150175,
+   "wall_s": 37,
+   "latency_s": 35,
+   "tokens": {
+    "prompt": 55974,
+    "completion": 2222,
+    "cache_read": 33605,
+    "cache_creation": 20618,
+    "total": 58196,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:41:51"
+  },
+  {
+   "answer": "fc-telegram__sonnet-xhigh__r2",
+   "task": "fc-telegram",
+   "setting": "sonnet-xhigh",
+   "rep": 2,
+   "cost_usd": 0.5085088,
+   "wall_s": 127,
+   "latency_s": 125,
+   "tokens": {
+    "prompt": 690739,
+    "completion": 15923,
+    "cache_read": 615860,
+    "cache_creation": 73098,
+    "total": 706662,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:41:54"
+  },
+  {
+   "answer": "fc-roamgate__opus-xhigh__r2",
+   "task": "fc-roamgate",
+   "setting": "opus-xhigh",
+   "rep": 2,
+   "cost_usd": 2.4105901000000003,
+   "wall_s": 321,
+   "latency_s": 318,
+   "tokens": {
+    "prompt": 4301284,
+    "completion": 26552,
+    "cache_read": 4167743,
+    "cache_creation": 131757,
+    "total": 4327836,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:42:08"
+  },
+  {
+   "answer": "intake-merchant-groups__sonnet-medium__r2",
+   "task": "intake-merchant-groups",
+   "setting": "sonnet-medium",
+   "rep": 2,
+   "cost_usd": 0.0756699,
+   "wall_s": 20,
+   "latency_s": 18,
+   "tokens": {
+    "prompt": 42765,
+    "completion": 1779,
+    "cache_read": 27274,
+    "cache_creation": 13800,
+    "total": 44544,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:42:09"
+  },
+  {
+   "answer": "intake-merchant-groups__fable-high__r2",
+   "task": "intake-merchant-groups",
+   "setting": "fable-high",
+   "rep": 2,
+   "cost_usd": 0.68241375,
+   "wall_s": 52,
+   "latency_s": 50,
+   "tokens": {
+    "prompt": 145903,
+    "completion": 3378,
+    "cache_read": 119893,
+    "cache_creation": 24131,
+    "total": 149281,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:42:13"
+  },
+  {
+   "answer": "fc-roamgate__sonnet-xhigh__r2",
+   "task": "fc-roamgate",
+   "setting": "sonnet-xhigh",
+   "rep": 2,
+   "cost_usd": 0.8071205,
+   "wall_s": 212,
+   "latency_s": 209,
+   "tokens": {
+    "prompt": 2392376,
+    "completion": 21926,
+    "cache_read": 2301185,
+    "cache_creation": 89409,
+    "total": 2414302,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:42:17"
+  },
+  {
+   "answer": "intake-news-0927__opus-high__r2",
+   "task": "intake-news-0927",
+   "setting": "opus-high",
+   "rep": 2,
+   "cost_usd": 0.39055059999999997,
+   "wall_s": 52,
+   "latency_s": 50,
+   "tokens": {
+    "prompt": 80446,
+    "completion": 4531,
+    "cache_read": 41769,
+    "cache_creation": 37033,
+    "total": 84977,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:42:46"
+  },
+  {
+   "answer": "intake-news-0927__fable-low__r2",
+   "task": "intake-news-0927",
+   "setting": "fable-low",
+   "rep": 2,
+   "cost_usd": 0.8958388,
+   "wall_s": 47,
+   "latency_s": 45,
+   "tokens": {
+    "prompt": 86095,
+    "completion": 2137,
+    "cache_read": 45492,
+    "cache_creation": 38899,
+    "total": 88232,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:42:55"
+  },
+  {
+   "answer": "intake-news-0927__sonnet-medium__r2",
+   "task": "intake-news-0927",
+   "setting": "sonnet-medium",
+   "rep": 2,
+   "cost_usd": 0.1918839,
+   "wall_s": 42,
+   "latency_s": 40,
+   "tokens": {
+    "prompt": 80467,
+    "completion": 3959,
+    "cache_read": 41781,
+    "cache_creation": 37042,
+    "total": 84426,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:42:59"
+  },
+  {
+   "answer": "intake-merchant-groups__opus-xhigh__r2",
+   "task": "intake-merchant-groups",
+   "setting": "opus-xhigh",
+   "rep": 2,
+   "cost_usd": 0.6402277000000001,
+   "wall_s": 113,
+   "latency_s": 111,
+   "tokens": {
+    "prompt": 347869,
+    "completion": 11047,
+    "cache_read": 301261,
+    "cache_creation": 44901,
+    "total": 358916,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:43:07"
+  },
+  {
+   "answer": "fc-telegram__fable-high__r2",
+   "task": "fc-telegram",
+   "setting": "fable-high",
+   "rep": 2,
+   "cost_usd": 2.2373912999999996,
+   "wall_s": 238,
+   "latency_s": 236,
+   "tokens": {
+    "prompt": 380635,
+    "completion": 12525,
+    "cache_read": 301938,
+    "cache_creation": 76718,
+    "total": 393160,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:43:22"
+  },
+  {
+   "answer": "fc-telegram__opus-xhigh__r2",
+   "task": "fc-telegram",
+   "setting": "opus-xhigh",
+   "rep": 2,
+   "cost_usd": 1.2522350000000002,
+   "wall_s": 278,
+   "latency_s": 276,
+   "tokens": {
+    "prompt": 965776,
+    "completion": 23235,
+    "cache_read": 887721,
+    "cache_creation": 76264,
+    "total": 989011,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:43:28"
+  },
+  {
+   "answer": "intake-news-0927__fable-high__r2",
+   "task": "intake-news-0927",
+   "setting": "fable-high",
+   "rep": 2,
+   "cost_usd": 1.0716915500000002,
+   "wall_s": 83,
+   "latency_s": 81,
+   "tokens": {
+    "prompt": 86127,
+    "completion": 5645,
+    "cache_read": 45509,
+    "cache_creation": 38914,
+    "total": 91772,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:43:36"
+  },
+  {
+   "answer": "intake-retention-voices__fable-low__r2",
+   "task": "intake-retention-voices",
+   "setting": "fable-low",
+   "rep": 2,
+   "cost_usd": 1.5844669999999998,
+   "wall_s": 54,
+   "latency_s": 52,
+   "tokens": {
+    "prompt": 188666,
+    "completion": 3449,
+    "cache_read": 117742,
+    "cache_creation": 69131,
+    "total": 192115,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:44:00"
+  },
+  {
+   "answer": "intake-retention-voices__sonnet-medium__r2",
+   "task": "intake-retention-voices",
+   "setting": "sonnet-medium",
+   "rep": 2,
+   "cost_usd": 0.3313313,
+   "wall_s": 65,
+   "latency_s": 64,
+   "tokens": {
+    "prompt": 302477,
+    "completion": 6280,
+    "cache_read": 239618,
+    "cache_creation": 61150,
+    "total": 308757,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:44:34"
+  },
+  {
+   "answer": "intake-merchant-groups__sonnet-xhigh__r2",
+   "task": "intake-merchant-groups",
+   "setting": "sonnet-xhigh",
+   "rep": 2,
+   "cost_usd": 0.5702120000000002,
+   "wall_s": 176,
+   "latency_s": 174,
+   "tokens": {
+    "prompt": 623512,
+    "completion": 24516,
+    "cache_read": 554395,
+    "cache_creation": 67404,
+    "total": 648028,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:44:47"
+  },
+  {
+   "answer": "intake-retention-voices__opus-high__r2",
+   "task": "intake-retention-voices",
+   "setting": "opus-high",
+   "rep": 2,
+   "cost_usd": 1.0538006,
+   "wall_s": 127,
+   "latency_s": 126,
+   "tokens": {
+    "prompt": 778627,
+    "completion": 10240,
+    "cache_read": 687953,
+    "cache_creation": 88953,
+    "total": 788867,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:45:03"
+  },
+  {
+   "answer": "intake-news-0927__sonnet-xhigh__r2",
+   "task": "intake-news-0927",
+   "setting": "sonnet-xhigh",
+   "rep": 2,
+   "cost_usd": 0.42947070000000004,
+   "wall_s": 139,
+   "latency_s": 137,
+   "tokens": {
+    "prompt": 304254,
+    "completion": 18453,
+    "cache_read": 247544,
+    "cache_creation": 55058,
+    "total": 322707,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:45:04"
+  },
+  {
+   "answer": "intake-wallet-slack__opus-high__r2",
+   "task": "intake-wallet-slack",
+   "setting": "opus-high",
+   "rep": 2,
+   "cost_usd": 0.4140654,
+   "wall_s": 64,
+   "latency_s": 62,
+   "tokens": {
+    "prompt": 164697,
+    "completion": 5305,
+    "cache_read": 127672,
+    "cache_creation": 35328,
+    "total": 170002,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:45:05"
+  },
+  {
+   "answer": "intake-wallet-slack__fable-low__r2",
+   "task": "intake-wallet-slack",
+   "setting": "fable-low",
+   "rep": 2,
+   "cost_usd": 0.73400575,
+   "wall_s": 46,
+   "latency_s": 44,
+   "tokens": {
+    "prompt": 80810,
+    "completion": 1969,
+    "cache_read": 47859,
+    "cache_creation": 31200,
+    "total": 82779,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:45:33"
+  },
+  {
+   "answer": "intake-news-0927__opus-xhigh__r2",
+   "task": "intake-news-0927",
+   "setting": "opus-xhigh",
+   "rep": 2,
+   "cost_usd": 0.9656092,
+   "wall_s": 213,
+   "latency_s": 212,
+   "tokens": {
+    "prompt": 383835,
+    "completion": 21830,
+    "cache_read": 324127,
+    "cache_creation": 58052,
+    "total": 405665,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:45:41"
+  },
+  {
+   "answer": "intake-wallet-slack__sonnet-medium__r2",
+   "task": "intake-wallet-slack",
+   "setting": "sonnet-medium",
+   "rep": 2,
+   "cost_usd": 0.16864780000000001,
+   "wall_s": 44,
+   "latency_s": 42,
+   "tokens": {
+    "prompt": 75273,
+    "completion": 4594,
+    "cache_read": 43993,
+    "cache_creation": 29589,
+    "total": 79867,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:45:48"
+  },
+  {
+   "answer": "cr-seenby-crops__sonnet-xhigh__r2",
+   "task": "cr-seenby-crops",
+   "setting": "sonnet-xhigh",
+   "rep": 2,
+   "cost_usd": 3.0735057000000006,
+   "wall_s": 1248,
+   "latency_s": 1247,
+   "tokens": {
+    "prompt": 8964033,
+    "completion": 130516,
+    "cache_read": 8738266,
+    "cache_creation": 223574,
+    "total": 9094549,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:46:03"
+  },
+  {
+   "answer": "intake-retention-voices__fable-high__r2",
+   "task": "intake-retention-voices",
+   "setting": "fable-high",
+   "rep": 2,
+   "cost_usd": 2.301051,
+   "wall_s": 165,
+   "latency_s": 163,
+   "tokens": {
+    "prompt": 292657,
+    "completion": 10720,
+    "cache_read": 205158,
+    "cache_creation": 85674,
+    "total": 303377,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:46:07"
+  },
+  {
+   "answer": "intake-retention-voices__sonnet-xhigh__r2",
+   "task": "intake-retention-voices",
+   "setting": "sonnet-xhigh",
+   "rep": 2,
+   "cost_usd": 0.6699541999999999,
+   "wall_s": 197,
+   "latency_s": 195,
+   "tokens": {
+    "prompt": 544533,
+    "completion": 24880,
+    "cache_read": 448742,
+    "cache_creation": 94078,
+    "total": 569413,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:46:53"
+  },
+  {
+   "answer": "intake-wallet-slack__fable-high__r2",
+   "task": "intake-wallet-slack",
+   "setting": "fable-high",
+   "rep": 2,
+   "cost_usd": 1.35043275,
+   "wall_s": 125,
+   "latency_s": 123,
+   "tokens": {
+    "prompt": 177620,
+    "completion": 8761,
+    "cache_read": 131853,
+    "cache_creation": 43952,
+    "total": 186381,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:47:08"
+  },
+  {
+   "answer": "intake-wallet-slack__sonnet-xhigh__r2",
+   "task": "intake-wallet-slack",
+   "setting": "sonnet-xhigh",
+   "rep": 2,
+   "cost_usd": 0.5948600000000002,
+   "wall_s": 165,
+   "latency_s": 163,
+   "tokens": {
+    "prompt": 756542,
+    "completion": 21679,
+    "cache_read": 677250,
+    "cache_creation": 77581,
+    "total": 778221,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:47:50"
+  },
+  {
+   "answer": "intake-retention-voices__opus-xhigh__r2",
+   "task": "intake-retention-voices",
+   "setting": "opus-xhigh",
+   "rep": 2,
+   "cost_usd": 1.7748518999999998,
+   "wall_s": 291,
+   "latency_s": 289,
+   "tokens": {
+    "prompt": 1316312,
+    "completion": 28886,
+    "cache_read": 1194792,
+    "cache_creation": 119793,
+    "total": 1345198,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:47:50"
+  },
+  {
+   "answer": "intake-wallet-slack__opus-xhigh__r2",
+   "task": "intake-wallet-slack",
+   "setting": "opus-xhigh",
+   "rep": 2,
+   "cost_usd": 1.2761416,
+   "wall_s": 229,
+   "latency_s": 227,
+   "tokens": {
+    "prompt": 1049022,
+    "completion": 20942,
+    "cache_read": 964223,
+    "cache_creation": 83080,
+    "total": 1069964,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:48:22"
+  },
+  {
+   "answer": "plan-gateway-fuse__fable-low__r2",
+   "task": "plan-gateway-fuse",
+   "setting": "fable-low",
+   "rep": 2,
+   "cost_usd": 2.7138111499999997,
+   "wall_s": 290,
+   "latency_s": 288,
+   "tokens": {
+    "prompt": 433361,
+    "completion": 20388,
+    "cache_read": 350161,
+    "cache_creation": 80268,
+    "total": 453749,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:52:40"
+  },
+  {
+   "answer": "plan-copy-shop__sonnet-medium__r2",
+   "task": "plan-copy-shop",
+   "setting": "sonnet-medium",
+   "rep": 2,
+   "cost_usd": 1.8830556,
+   "wall_s": 440,
+   "latency_s": 437,
+   "tokens": {
+    "prompt": 6546825,
+    "completion": 51814,
+    "cache_read": 6361074,
+    "cache_creation": 183082,
+    "total": 6598639,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:53:26"
+  },
+  {
+   "answer": "plan-gateway-fuse__fable-high__r2",
+   "task": "plan-gateway-fuse",
+   "setting": "fable-high",
+   "rep": 2,
+   "cost_usd": 3.0370359,
+   "wall_s": 356,
+   "latency_s": 355,
+   "tokens": {
+    "prompt": 470335,
+    "completion": 24862,
+    "cache_read": 382580,
+    "cache_creation": 84855,
+    "total": 495197,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:54:19"
+  },
+  {
+   "answer": "plan-gateway-fuse__opus-high__r2",
+   "task": "plan-gateway-fuse",
+   "setting": "opus-high",
+   "rep": 2,
+   "cost_usd": 1.9506531,
+   "wall_s": 439,
+   "latency_s": 437,
+   "tokens": {
+    "prompt": 1710067,
+    "completion": 36735,
+    "cache_read": 1595221,
+    "cache_creation": 112120,
+    "total": 1746802,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:54:27"
+  },
+  {
+   "answer": "plan-gateway-fuse__sonnet-medium__r2",
+   "task": "plan-gateway-fuse",
+   "setting": "sonnet-medium",
+   "rep": 2,
+   "cost_usd": 0.32758969999999993,
+   "wall_s": 111,
+   "latency_s": 109,
+   "tokens": {
+    "prompt": 231256,
+    "completion": 13263,
+    "cache_read": 184448,
+    "cache_creation": 44118,
+    "total": 244519,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:54:31"
+  },
+  {
+   "answer": "plan-copy-shop__fable-low__r2",
+   "task": "plan-copy-shop",
+   "setting": "fable-low",
+   "rep": 2,
+   "cost_usd": 4.6051362,
+   "wall_s": 570,
+   "latency_s": 568,
+   "tokens": {
+    "prompt": 918184,
+    "completion": 34057,
+    "cache_read": 779092,
+    "cache_creation": 136245,
+    "total": 952241,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:55:18"
+  },
+  {
+   "answer": "plan-copy-shop__fable-high__r2",
+   "task": "plan-copy-shop",
+   "setting": "fable-high",
+   "rep": 2,
+   "cost_usd": 7.936271699999999,
+   "wall_s": 767,
+   "latency_s": 765,
+   "tokens": {
+    "prompt": 1197883,
+    "completion": 55934,
+    "cache_read": 948966,
+    "cache_creation": 246070,
+    "total": 1253817,
+    "requests": 1
+   },
+   "finished": "2026-10-18T04:58:49"
+  },
+  {
+   "answer": "plan-gateway-fuse__opus-xhigh__r2",
+   "task": "plan-gateway-fuse",
+   "setting": "opus-xhigh",
+   "rep": 2,
+   "cost_usd": 3.4614290000000003,
+   "wall_s": 770,
+   "latency_s": 768,
+   "tokens": {
+    "prompt": 2830986,
+    "completion": 77418,
+    "cache_read": 2655513,
+    "cache_creation": 172733,
+    "total": 2908404,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:00:40"
+  },
+  {
+   "answer": "plan-seenby-eval__fable-low__r2",
+   "task": "plan-seenby-eval",
+   "setting": "fable-low",
+   "rep": 2,
+   "cost_usd": 4.8891881,
+   "wall_s": 395,
+   "latency_s": 393,
+   "tokens": {
+    "prompt": 897780,
+    "completion": 28091,
+    "cache_read": 730098,
+    "cache_creation": 165040,
+    "total": 925871,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:01:06"
+  },
+  {
+   "answer": "plan-copy-shop__opus-high__r2",
+   "task": "plan-copy-shop",
+   "setting": "opus-high",
+   "rep": 2,
+   "cost_usd": 6.452954700000001,
+   "wall_s": 1014,
+   "latency_s": 1012,
+   "tokens": {
+    "prompt": 14100094,
+    "completion": 77555,
+    "cache_read": 13829800,
+    "cache_creation": 267567,
+    "total": 14177649,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:02:27"
+  },
+  {
+   "answer": "plan-seenby-eval__fable-high__r2",
+   "task": "plan-seenby-eval",
+   "setting": "fable-high",
+   "rep": 2,
+   "cost_usd": 6.120555849999999,
+   "wall_s": 504,
+   "latency_s": 502,
+   "tokens": {
+    "prompt": 1495770,
+    "completion": 34580,
+    "cache_read": 1289689,
+    "cache_creation": 203343,
+    "total": 1530350,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:03:42"
+  },
+  {
+   "answer": "plan-seenby-eval__sonnet-medium__r2",
+   "task": "plan-seenby-eval",
+   "setting": "sonnet-medium",
+   "rep": 2,
+   "cost_usd": 0.8975825,
+   "wall_s": 308,
+   "latency_s": 306,
+   "tokens": {
+    "prompt": 1636468,
+    "completion": 36344,
+    "cache_read": 1538969,
+    "cache_creation": 95033,
+    "total": 1672812,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:03:57"
+  },
+  {
+   "answer": "plan-gateway-fuse__sonnet-xhigh__r2",
+   "task": "plan-gateway-fuse",
+   "setting": "sonnet-xhigh",
+   "rep": 2,
+   "cost_usd": 1.9063326,
+   "wall_s": 677,
+   "latency_s": 675,
+   "tokens": {
+    "prompt": 3086877,
+    "completion": 89383,
+    "cache_read": 2903637,
+    "cache_creation": 180498,
+    "total": 3176260,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:04:43"
+  },
+  {
+   "answer": "plan-seenby-eval__opus-high__r2",
+   "task": "plan-seenby-eval",
+   "setting": "opus-high",
+   "rep": 2,
+   "cost_usd": 3.3928022000000007,
+   "wall_s": 706,
+   "latency_s": 705,
+   "tokens": {
+    "prompt": 4172661,
+    "completion": 60167,
+    "cache_read": 3996403,
+    "cache_creation": 173760,
+    "total": 4232828,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:06:05"
+  },
+  {
+   "answer": "plan-copy-shop__opus-xhigh__r2",
+   "task": "plan-copy-shop",
+   "setting": "opus-xhigh",
+   "rep": 2,
+   "cost_usd": 8.555749599999999,
+   "wall_s": 1245,
+   "latency_s": 1243,
+   "tokens": {
+    "prompt": 17124144,
+    "completion": 122123,
+    "cache_read": 16775517,
+    "cache_creation": 345894,
+    "total": 17246267,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:06:26"
+  },
+  {
+   "answer": "plan-copy-shop__sonnet-xhigh__r2",
+   "task": "plan-copy-shop",
+   "setting": "sonnet-xhigh",
+   "rep": 2,
+   "cost_usd": 5.199600900000001,
+   "wall_s": 1231,
+   "latency_s": 1229,
+   "tokens": {
+    "prompt": 20586662,
+    "completion": 157683,
+    "cache_read": 20181822,
+    "cache_creation": 402097,
+    "total": 20744345,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:07:23"
+  },
+  {
+   "answer": "plan-send-notes__sonnet-medium__r2",
+   "task": "plan-send-notes",
+   "setting": "sonnet-medium",
+   "rep": 2,
+   "cost_usd": 0.8307852,
+   "wall_s": 251,
+   "latency_s": 249,
+   "tokens": {
+    "prompt": 1233015,
+    "completion": 28768,
+    "cache_read": 1122138,
+    "cache_creation": 108306,
+    "total": 1261783,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:08:54"
+  },
+  {
+   "answer": "plan-send-notes__opus-high__r2",
+   "task": "plan-send-notes",
+   "setting": "opus-high",
+   "rep": 2,
+   "cost_usd": 3.2016884999999995,
+   "wall_s": 684,
+   "latency_s": 682,
+   "tokens": {
+    "prompt": 3083983,
+    "completion": 62419,
+    "cache_read": 2909983,
+    "cache_creation": 171401,
+    "total": 3146402,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:12:30"
+  },
+  {
+   "answer": "plan-send-notes__fable-low__r2",
+   "task": "plan-send-notes",
+   "setting": "fable-low",
+   "rep": 2,
+   "cost_usd": 4.5397444,
+   "wall_s": 537,
+   "latency_s": 535,
+   "tokens": {
+    "prompt": 591631,
+    "completion": 34568,
+    "cache_read": 453216,
+    "cache_creation": 135650,
+    "total": 626199,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:12:39"
+  },
+  {
+   "answer": "plan-stock-hide__opus-high__r2",
+   "task": "plan-stock-hide",
+   "setting": "opus-high",
+   "rep": 2,
+   "cost_usd": 2.1965072,
+   "wall_s": 391,
+   "latency_s": 389,
+   "tokens": {
+    "prompt": 2485090,
+    "completion": 35000,
+    "cache_read": 2354400,
+    "cache_creation": 128205,
+    "total": 2520090,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:12:57"
+  },
+  {
+   "answer": "plan-seenby-eval__opus-xhigh__r2",
+   "task": "plan-seenby-eval",
+   "setting": "opus-xhigh",
+   "rep": 2,
+   "cost_usd": 5.1475545,
+   "wall_s": 1151,
+   "latency_s": 1150,
+   "tokens": {
+    "prompt": 5438810,
+    "completion": 102984,
+    "cache_read": 5179107,
+    "cache_creation": 257221,
+    "total": 5541794,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:13:38"
+  },
+  {
+   "answer": "plan-send-notes__fable-high__r2",
+   "task": "plan-send-notes",
+   "setting": "fable-high",
+   "rep": 2,
+   "cost_usd": 6.38718465,
+   "wall_s": 615,
+   "latency_s": 613,
+   "tokens": {
+    "prompt": 1487770,
+    "completion": 47466,
+    "cache_read": 1299703,
+    "cache_creation": 185174,
+    "total": 1535236,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:14:12"
+  },
+  {
+   "answer": "recall-glossary__opus-high__r2",
+   "task": "recall-glossary",
+   "setting": "opus-high",
+   "rep": 2,
+   "cost_usd": 0.19744689999999998,
+   "wall_s": 44,
+   "latency_s": 43,
+   "tokens": {
+    "prompt": 33985,
+    "completion": 4499,
+    "cache_read": 19288,
+    "cache_creation": 12973,
+    "total": 38484,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:14:22"
+  },
+  {
+   "answer": "plan-stock-hide__fable-low__r2",
+   "task": "plan-stock-hide",
+   "setting": "fable-low",
+   "rep": 2,
+   "cost_usd": 3.3044239500000003,
+   "wall_s": 370,
+   "latency_s": 368,
+   "tokens": {
+    "prompt": 945750,
+    "completion": 27044,
+    "cache_read": 856155,
+    "cache_creation": 86750,
+    "total": 972794,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:15:04"
+  },
+  {
+   "answer": "recall-glossary__fable-low__r2",
+   "task": "recall-glossary",
+   "setting": "fable-low",
+   "rep": 2,
+   "cost_usd": 0.4198513,
+   "wall_s": 45,
+   "latency_s": 44,
+   "tokens": {
+    "prompt": 29391,
+    "completion": 2643,
+    "cache_read": 13400,
+    "cache_creation": 14239,
+    "total": 32034,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:15:08"
+  },
+  {
+   "answer": "recall-glossary__sonnet-medium__r2",
+   "task": "recall-glossary",
+   "setting": "sonnet-medium",
+   "rep": 2,
+   "cost_usd": 0.09276770000000001,
+   "wall_s": 27,
+   "latency_s": 25,
+   "tokens": {
+    "prompt": 45715,
+    "completion": 3421,
+    "cache_read": 30104,
+    "cache_creation": 13885,
+    "total": 49136,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:15:34"
+  },
+  {
+   "answer": "recall-glossary__opus-xhigh__r2",
+   "task": "recall-glossary",
+   "setting": "opus-xhigh",
+   "rep": 2,
+   "cost_usd": 0.34639899999999996,
+   "wall_s": 112,
+   "latency_s": 111,
+   "tokens": {
+    "prompt": 33805,
+    "completion": 12284,
+    "cache_read": 19201,
+    "cache_creation": 12880,
+    "total": 46089,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:16:04"
+  },
+  {
+   "answer": "plan-stock-hide__sonnet-medium__r2",
+   "task": "plan-stock-hide",
+   "setting": "sonnet-medium",
+   "rep": 2,
+   "cost_usd": 0.47142300000000004,
+   "wall_s": 212,
+   "latency_s": 210,
+   "tokens": {
+    "prompt": 915951,
+    "completion": 16852,
+    "cache_read": 859258,
+    "cache_creation": 54220,
+    "total": 932803,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:16:11"
+  },
+  {
+   "answer": "recall-glossary__fable-high__r2",
+   "task": "recall-glossary",
+   "setting": "fable-high",
+   "rep": 2,
+   "cost_usd": 0.5478353,
+   "wall_s": 84,
+   "latency_s": 82,
+   "tokens": {
+    "prompt": 29749,
+    "completion": 5129,
+    "cache_read": 13576,
+    "cache_creation": 14421,
+    "total": 34878,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:16:28"
+  },
+  {
+   "answer": "recall-glossary__sonnet-xhigh__r2",
+   "task": "recall-glossary",
+   "setting": "sonnet-xhigh",
+   "rep": 2,
+   "cost_usd": 0.1417087,
+   "wall_s": 59,
+   "latency_s": 57,
+   "tokens": {
+    "prompt": 48226,
+    "completion": 8858,
+    "cache_read": 33309,
+    "cache_creation": 13191,
+    "total": 57084,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:16:33"
+  },
+  {
+   "answer": "plan-send-notes__sonnet-xhigh__r2",
+   "task": "plan-send-notes",
+   "setting": "sonnet-xhigh",
+   "rep": 2,
+   "cost_usd": 2.0017534,
+   "wall_s": 668,
+   "latency_s": 667,
+   "tokens": {
+    "prompt": 2945624,
+    "completion": 88890,
+    "cache_read": 2732470,
+    "cache_creation": 210567,
+    "total": 3034514,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:17:14"
+  },
+  {
+   "answer": "recall-specguard__sonnet-medium__r2",
+   "task": "recall-specguard",
+   "setting": "sonnet-medium",
+   "rep": 2,
+   "cost_usd": 0.28330449999999996,
+   "wall_s": 82,
+   "latency_s": 81,
+   "tokens": {
+    "prompt": 279660,
+    "completion": 9711,
+    "cache_read": 237165,
+    "cache_creation": 40625,
+    "total": 289371,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:18:36"
+  },
+  {
+   "answer": "recall-specguard__opus-high__r2",
+   "task": "recall-specguard",
+   "setting": "opus-high",
+   "rep": 2,
+   "cost_usd": 1.6448376,
+   "wall_s": 182,
+   "latency_s": 180,
+   "tokens": {
+    "prompt": 1127537,
+    "completion": 13876,
+    "cache_read": 979208,
+    "cache_creation": 146451,
+    "total": 1141413,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:19:06"
+  },
+  {
+   "answer": "recall-specguard__fable-low__r2",
+   "task": "recall-specguard",
+   "setting": "fable-low",
+   "rep": 2,
+   "cost_usd": 2.7774785,
+   "wall_s": 162,
+   "latency_s": 160,
+   "tokens": {
+    "prompt": 532373,
+    "completion": 11210,
+    "cache_read": 424810,
+    "cache_creation": 105455,
+    "total": 543583,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:19:10"
+  },
+  {
+   "answer": "recall-specguard__fable-high__r2",
+   "task": "recall-specguard",
+   "setting": "fable-high",
+   "rep": 2,
+   "cost_usd": 2.9160677500000003,
+   "wall_s": 178,
+   "latency_s": 176,
+   "tokens": {
+    "prompt": 520719,
+    "completion": 13681,
+    "cache_read": 412247,
+    "cache_creation": 106364,
+    "total": 534400,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:19:31"
+  },
+  {
+   "answer": "plan-send-notes__opus-xhigh__r2",
+   "task": "plan-send-notes",
+   "setting": "opus-xhigh",
+   "rep": 2,
+   "cost_usd": 4.3877571,
+   "wall_s": 1042,
+   "latency_s": 1040,
+   "tokens": {
+    "prompt": 3462504,
+    "completion": 100404,
+    "cache_read": 3243546,
+    "cache_creation": 216357,
+    "total": 3562908,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:19:49"
+  },
+  {
+   "answer": "plan-seenby-eval__sonnet-xhigh__r2",
+   "task": "plan-seenby-eval",
+   "setting": "sonnet-xhigh",
+   "rep": 2,
+   "cost_usd": 3.3832225,
+   "wall_s": 1227,
+   "latency_s": 1225,
+   "tokens": {
+    "prompt": 6271224,
+    "completion": 157659,
+    "cache_read": 5966269,
+    "cache_creation": 302457,
+    "total": 6428883,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:21:07"
+  },
+  {
+   "answer": "recall-specguard__opus-xhigh__r2",
+   "task": "recall-specguard",
+   "setting": "opus-xhigh",
+   "rep": 2,
+   "cost_usd": 1.7869172,
+   "wall_s": 325,
+   "latency_s": 323,
+   "tokens": {
+    "prompt": 1553857,
+    "completion": 30847,
+    "cache_read": 1441746,
+    "cache_creation": 110207,
+    "total": 1584704,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:21:36"
+  },
+  {
+   "answer": "plan-stock-hide__opus-xhigh__r2",
+   "task": "plan-stock-hide",
+   "setting": "opus-xhigh",
+   "rep": 2,
+   "cost_usd": 4.004455,
+   "wall_s": 875,
+   "latency_s": 873,
+   "tokens": {
+    "prompt": 5789092,
+    "completion": 74122,
+    "cache_read": 5610889,
+    "cache_creation": 175668,
+    "total": 5863214,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:21:58"
+  },
+  {
+   "answer": "plan-stock-hide__fable-high__r2",
+   "task": "plan-stock-hide",
+   "setting": "fable-high",
+   "rep": 2,
+   "cost_usd": 4.02884045,
+   "wall_s": 589,
+   "latency_s": 588,
+   "tokens": {
+    "prompt": 538177,
+    "completion": 34667,
+    "cache_read": 426147,
+    "cache_creation": 109377,
+    "total": 572844,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:22:19"
+  },
+  {
+   "answer": "sm-recall__opus-high__r2",
+   "task": "sm-recall",
+   "setting": "opus-high",
+   "rep": 2,
+   "cost_usd": 2.3695752999999997,
+   "wall_s": 281,
+   "latency_s": 279,
+   "tokens": {
+    "prompt": 2309518,
+    "completion": 23757,
+    "cache_read": 2123381,
+    "cache_creation": 183712,
+    "total": 2333275,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:23:47"
+  },
+  {
+   "answer": "recall-specguard__sonnet-xhigh__r2",
+   "task": "recall-specguard",
+   "setting": "sonnet-xhigh",
+   "rep": 2,
+   "cost_usd": 1.1573765,
+   "wall_s": 315,
+   "latency_s": 313,
+   "tokens": {
+    "prompt": 2263165,
+    "completion": 40969,
+    "cache_read": 2127545,
+    "cache_creation": 133708,
+    "total": 2304134,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:23:50"
+  },
+  {
+   "answer": "turn-floating-ui__opus-high__r2",
+   "task": "turn-floating-ui",
+   "setting": "opus-high",
+   "rep": 2,
+   "cost_usd": 0.7726106,
+   "wall_s": 137,
+   "latency_s": 135,
+   "tokens": {
+    "prompt": 537632,
+    "completion": 11131,
+    "cache_read": 479226,
+    "cache_creation": 56782,
+    "total": 548763,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:24:15"
+  },
+  {
+   "answer": "sm-recall__fable-low__r2",
+   "task": "sm-recall",
+   "setting": "fable-low",
+   "rep": 2,
+   "cost_usd": 5.98812135,
+   "wall_s": 321,
+   "latency_s": 319,
+   "tokens": {
+    "prompt": 1686891,
+    "completion": 19929,
+    "cache_read": 1452813,
+    "cache_creation": 231225,
+    "total": 1706820,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:24:52"
+  },
+  {
+   "answer": "sm-recall__sonnet-medium__r2",
+   "task": "sm-recall",
+   "setting": "sonnet-medium",
+   "rep": 2,
+   "cost_usd": 0.9312060999999999,
+   "wall_s": 234,
+   "latency_s": 232,
+   "tokens": {
+    "prompt": 2269161,
+    "completion": 25566,
+    "cache_read": 2151670,
+    "cache_creation": 115046,
+    "total": 2294727,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:25:01"
+  },
+  {
+   "answer": "plan-stock-hide__sonnet-xhigh__r2",
+   "task": "plan-stock-hide",
+   "setting": "sonnet-xhigh",
+   "rep": 2,
+   "cost_usd": 2.4534701000000005,
+   "wall_s": 789,
+   "latency_s": 788,
+   "tokens": {
+    "prompt": 6495338,
+    "completion": 99615,
+    "cache_read": 6285669,
+    "cache_creation": 207132,
+    "total": 6594953,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:26:06"
+  },
+  {
+   "answer": "sm-recall__fable-high__r2",
+   "task": "sm-recall",
+   "setting": "fable-high",
+   "rep": 2,
+   "cost_usd": 6.374465849999999,
+   "wall_s": 408,
+   "latency_s": 407,
+   "tokens": {
+    "prompt": 1622443,
+    "completion": 29631,
+    "cache_read": 1392557,
+    "cache_creation": 227033,
+    "total": 1652074,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:26:37"
+  },
+  {
+   "answer": "sm-recall__opus-xhigh__r2",
+   "task": "sm-recall",
+   "setting": "opus-xhigh",
+   "rep": 2,
+   "cost_usd": 3.3884429000000003,
+   "wall_s": 536,
+   "latency_s": 534,
+   "tokens": {
+    "prompt": 3342203,
+    "completion": 47595,
+    "cache_read": 3113039,
+    "cache_creation": 226729,
+    "total": 3389798,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:28:06"
+  },
+  {
+   "answer": "turn-floating-ui__opus-xhigh__r2",
+   "task": "turn-floating-ui",
+   "setting": "opus-xhigh",
+   "rep": 2,
+   "cost_usd": 2.1543659999999996,
+   "wall_s": 358,
+   "latency_s": 356,
+   "tokens": {
+    "prompt": 2687111,
+    "completion": 31219,
+    "cache_read": 2558148,
+    "cache_creation": 127307,
+    "total": 2718330,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:28:16"
+  },
+  {
+   "answer": "sm-recall__sonnet-xhigh__r2",
+   "task": "sm-recall",
+   "setting": "sonnet-xhigh",
+   "rep": 2,
+   "cost_usd": 1.9825402,
+   "wall_s": 526,
+   "latency_s": 524,
+   "tokens": {
+    "prompt": 3381644,
+    "completion": 66823,
+    "cache_read": 3128891,
+    "cache_creation": 250324,
+    "total": 3448467,
+    "requests": 1
+   },
+   "finished": "2026-10-18T05:30:22"
+  },
+  {
+   "answer": "turn-hono-rpc__sonnet-medium__r2",
+   "task": "turn-hono-rpc",
+   "setting": "sonnet-medium",
+   "rep": 2,
+   "cost_usd": 0.0752998,
+   "wall_s": 24,
+   "latency_s": 21,
+   "tokens": {
+    "prompt": 65047,
+    "completion": 2193,
+    "cache_read": 50874,
+    "cache_creation": 12594,
+    "total": 67240,
+    "requests": 1
+   },
+   "finished": "2026-10-18T08:29:11"
+  },
+  {
+   "answer": "turn-floating-ui__sonnet-medium__r2",
+   "task": "turn-floating-ui",
+   "setting": "sonnet-medium",
+   "rep": 2,
+   "cost_usd": 0.0936217,
+   "wall_s": 36,
+   "latency_s": 34,
+   "tokens": {
+    "prompt": 101068,
+    "completion": 2879,
+    "cache_read": 85368,
+    "cache_creation": 14090,
+    "total": 103947,
+    "requests": 1
+   },
+   "finished": "2026-10-18T08:29:23"
+  },
+  {
+   "answer": "turn-hono-rpc__fable-low__r2",
+   "task": "turn-hono-rpc",
+   "setting": "fable-low",
+   "rep": 2,
+   "cost_usd": 1.90043715,
+   "wall_s": 83,
+   "latency_s": 81,
+   "tokens": {
+    "prompt": 277766,
+    "completion": 4353,
+    "cache_read": 193689,
+    "cache_creation": 82378,
+    "total": 282119,
+    "requests": 1
+   },
+   "finished": "2026-10-18T08:30:11"
+  },
+  {
+   "answer": "turn-hono-rpc__opus-high__r2",
+   "task": "turn-hono-rpc",
+   "setting": "opus-high",
+   "rep": 2,
+   "cost_usd": 0.5247487000000001,
+   "wall_s": 99,
+   "latency_s": 96,
+   "tokens": {
+    "prompt": 382121,
+    "completion": 5896,
+    "cache_read": 337359,
+    "cache_creation": 43167,
+    "total": 388017,
+    "requests": 1
+   },
+   "finished": "2026-10-18T08:30:26"
+  },
+  {
+   "answer": "turn-hono-rpc__fable-high__r2",
+   "task": "turn-hono-rpc",
+   "setting": "fable-high",
+   "rep": 2,
+   "cost_usd": 2.45899665,
+   "wall_s": 115,
+   "latency_s": 112,
+   "tokens": {
+    "prompt": 404902,
+    "completion": 6889,
+    "cache_read": 300607,
+    "cache_creation": 102564,
+    "total": 411791,
+    "requests": 1
+   },
+   "finished": "2026-10-18T08:30:42"
+  },
+  {
+   "answer": "turn-floating-ui__fable-high__r2",
+   "task": "turn-floating-ui",
+   "setting": "fable-high",
+   "rep": 2,
+   "cost_usd": 2.6960961500000002,
+   "wall_s": 156,
+   "latency_s": 153,
+   "tokens": {
+    "prompt": 687827,
+    "completion": 6871,
+    "cache_read": 575613,
+    "cache_creation": 110362,
+    "total": 694698,
+    "requests": 1
+   },
+   "finished": "2026-10-18T08:31:23"
+  },
+  {
+   "answer": "turn-floating-ui__fable-low__r2",
+   "task": "turn-floating-ui",
+   "setting": "fable-low",
+   "rep": 2,
+   "cost_usd": 1.6655394,
+   "wall_s": 158,
+   "latency_s": 155,
+   "tokens": {
+    "prompt": 407097,
+    "completion": 6331,
+    "cache_read": 342160,
+    "cache_creation": 63085,
+    "total": 413428,
+    "requests": 1
+   },
+   "finished": "2026-10-18T08:31:25"
+  },
+  {
+   "answer": "turn-pinpoint__sonnet-medium__r2",
+   "task": "turn-pinpoint",
+   "setting": "sonnet-medium",
+   "rep": 2,
+   "cost_usd": 0.2290743,
+   "wall_s": 57,
+   "latency_s": 55,
+   "tokens": {
+    "prompt": 203291,
+    "completion": 6113,
+    "cache_read": 163251,
+    "cache_creation": 38422,
+    "total": 209404,
+    "requests": 1
+   },
+   "finished": "2026-10-18T08:31:39"
+  },
+  {
+   "answer": "turn-hono-rpc__sonnet-xhigh__r2",
+   "task": "turn-hono-rpc",
+   "setting": "sonnet-xhigh",
+   "rep": 2,
+   "cost_usd": 0.7524886999999999,
+   "wall_s": 187,
+   "latency_s": 185,
+   "tokens": {
+    "prompt": 1922192,
+    "completion": 22163,
+    "cache_read": 1833193,
+    "cache_creation": 87368,
+    "total": 1944355,
+    "requests": 1
+   },
+   "finished": "2026-10-18T08:31:55"
+  },
+  {
+   "answer": "turn-pinpoint__opus-high__r2",
+   "task": "turn-pinpoint",
+   "setting": "opus-high",
+   "rep": 2,
+   "cost_usd": 0.9879994999999999,
+   "wall_s": 166,
+   "latency_s": 164,
+   "tokens": {
+    "prompt": 816937,
+    "completion": 11473,
+    "cache_read": 738334,
+    "cache_creation": 76969,
+    "total": 828410,
+    "requests": 1
+   },
+   "finished": "2026-10-18T08:31:57"
+  },
+  {
+   "answer": "turn-hono-rpc__opus-xhigh__r2",
+   "task": "turn-hono-rpc",
+   "setting": "opus-xhigh",
+   "rep": 2,
+   "cost_usd": 1.4778409000000001,
+   "wall_s": 201,
+   "latency_s": 198,
+   "tokens": {
+    "prompt": 1582939,
+    "completion": 16852,
+    "cache_read": 1474710,
+    "cache_creation": 106618,
+    "total": 1599791,
+    "requests": 1
+   },
+   "finished": "2026-10-18T08:32:08"
+  },
+  {
+   "answer": "turn-review-exports__sonnet-medium__r2",
+   "task": "turn-review-exports",
+   "setting": "sonnet-medium",
+   "rep": 2,
+   "cost_usd": 0.0745909,
+   "wall_s": 23,
+   "latency_s": 21,
+   "tokens": {
+    "prompt": 68378,
+    "completion": 1964,
+    "cache_read": 54448,
+    "cache_creation": 12382,
+    "total": 70342,
+    "requests": 1
+   },
+   "finished": "2026-10-18T08:32:31"
+  },
+  {
+   "answer": "turn-review-exports__fable-low__r2",
+   "task": "turn-review-exports",
+   "setting": "fable-low",
+   "rep": 2,
+   "cost_usd": 0.8951456,
+   "wall_s": 56,
+   "latency_s": 54,
+   "tokens": {
+    "prompt": 238401,
+    "completion": 3300,
+    "cache_read": 202686,
+    "cache_creation": 33857,
+    "total": 241701,
+    "requests": 1
+   },
+   "finished": "2026-10-18T08:32:51"
+  },
+  {
+   "answer": "turn-floating-ui__sonnet-xhigh__r2",
+   "task": "turn-floating-ui",
+   "setting": "sonnet-xhigh",
+   "rep": 2,
+   "cost_usd": 0.8928582,
+   "wall_s": 260,
+   "latency_s": 258,
+   "tokens": {
+    "prompt": 1729801,
+    "completion": 31249,
+    "cache_read": 1623653,
+    "cache_creation": 104496,
+    "total": 1761050,
+    "requests": 1
+   },
+   "finished": "2026-10-18T08:33:08"
+  },
+  {
+   "answer": "turn-review-exports__opus-high__r2",
+   "task": "turn-review-exports",
+   "setting": "opus-high",
+   "rep": 2,
+   "cost_usd": 0.5217672999999999,
+   "wall_s": 121,
+   "latency_s": 119,
+   "tokens": {
+    "prompt": 360617,
+    "completion": 6391,
+    "cache_read": 317736,
+    "cache_creation": 41319,
+    "total": 367008,
+    "requests": 1
+   },
+   "finished": "2026-10-18T08:33:26"
+  },
+  {
+   "answer": "turn-pinpoint__fable-high__r2",
+   "task": "turn-pinpoint",
+   "setting": "fable-high",
+   "rep": 2,
+   "cost_usd": 3.25827395,
+   "wall_s": 191,
+   "latency_s": 189,
+   "tokens": {
+    "prompt": 753040,
+    "completion": 12964,
+    "cache_read": 627995,
+    "cache_creation": 123185,
+    "total": 766004,
+    "requests": 1
+   },
+   "finished": "2026-10-18T08:33:37"
+  },
+  {
+   "answer": "turn-review-exports__fable-high__r2",
+   "task": "turn-review-exports",
+   "setting": "fable-high",
+   "rep": 2,
+   "cost_usd": 1.9359331000000002,
+   "wall_s": 102,
+   "latency_s": 101,
+   "tokens": {
+    "prompt": 395455,
+    "completion": 5947,
+    "cache_read": 315796,
+    "cache_creation": 77929,
+    "total": 401402,
+    "requests": 1
+   },
+   "finished": "2026-10-18T08:33:40"
+  },
+  {
+   "answer": "turn-pinpoint__fable-low__r2",
+   "task": "turn-pinpoint",
+   "setting": "fable-low",
+   "rep": 2,
+   "cost_usd": 3.0781796999999997,
+   "wall_s": 220,
+   "latency_s": 219,
+   "tokens": {
+    "prompt": 719071,
+    "completion": 10838,
+    "cache_read": 597360,
+    "cache_creation": 119851,
+    "total": 729909,
+    "requests": 1
+   },
+   "finished": "2026-10-18T08:33:51"
+  },
+  {
+   "answer": "turn-pinpoint__opus-xhigh__r2",
+   "task": "turn-pinpoint",
+   "setting": "opus-xhigh",
+   "rep": 2,
+   "cost_usd": 1.6921781,
+   "wall_s": 274,
+   "latency_s": 272,
+   "tokens": {
+    "prompt": 1781493,
+    "completion": 24879,
+    "cache_read": 1671567,
+    "cache_creation": 108272,
+    "total": 1806372,
+    "requests": 1
+   },
+   "finished": "2026-10-18T08:33:57"
+  },
+  {
+   "answer": "turn-review-exports__sonnet-xhigh__r2",
+   "task": "turn-review-exports",
+   "setting": "sonnet-xhigh",
+   "rep": 2,
+   "cost_usd": 0.46762310000000007,
+   "wall_s": 137,
+   "latency_s": 136,
+   "tokens": {
+    "prompt": 673844,
+    "completion": 15107,
+    "cache_read": 608350,
+    "cache_creation": 63924,
+    "total": 688951,
+    "requests": 1
+   },
+   "finished": "2026-10-18T08:34:49"
+  },
+  {
+   "answer": "turn-pinpoint__sonnet-xhigh__r2",
+   "task": "turn-pinpoint",
+   "setting": "sonnet-xhigh",
+   "rep": 2,
+   "cost_usd": 0.9647764000000001,
+   "wall_s": 227,
+   "latency_s": 225,
+   "tokens": {
+    "prompt": 1560476,
+    "completion": 27312,
+    "cache_read": 1420887,
+    "cache_creation": 137947,
+    "total": 1587788,
+    "requests": 1
+   },
+   "finished": "2026-10-18T08:35:10"
+  },
+  {
+   "answer": "turn-review-exports__opus-xhigh__r2",
+   "task": "turn-review-exports",
+   "setting": "opus-xhigh",
+   "rep": 2,
+   "cost_usd": 1.6845453000000001,
+   "wall_s": 241,
+   "latency_s": 239,
+   "tokens": {
+    "prompt": 1898871,
+    "completion": 14533,
+    "cache_read": 1767226,
+    "cache_creation": 130065,
+    "total": 1913404,
+    "requests": 1
+   },
+   "finished": "2026-10-18T08:35:40"
+  }
+ ]
+}
